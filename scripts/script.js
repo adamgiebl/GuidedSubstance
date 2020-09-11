@@ -13,10 +13,10 @@ fetch(API_URL)
       main.insertAdjacentHTML(
         "beforeend",
         `
-        <div>
+        <div style="display: inline-block">
         <h2>${element.gsx$name.$t}</h2>
         <p>${element.gsx$category.$t}</p>
-        <img src="./images/${element.gsx$image.$t}">
+        <img src="./images/${element.gsx$image.$t}" style="height: 150px">
         </div>
       `
       );

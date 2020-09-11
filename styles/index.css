@@ -31,4 +31,5 @@ h1 {
   display: block;
   color: var(--white);
   font-family: var(--primary-font);
+  margin-bottom: 50px;
 }
