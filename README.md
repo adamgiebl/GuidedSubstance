@@ -1,1 +1,1 @@
-![guidedSubstance](./resources.styletile.png "Style tile")
+![guidedSubstance](./resources/styletile.png "Style tile")
