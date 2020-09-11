@@ -1,0 +1,30 @@
+{
+  "name": "MDMA",
+  "schedule": "1",
+  "category": "Stimulants",
+  "description": "descriptionnnn",
+  "source": "link to the drugs psychonautwiki.org page",
+  "effectsDesc": "description of the effects",
+  "effects": ["one", "two", "three", "as many as you want"],
+  "negativeEffects": [
+    "excessive yawning",
+    "increased blood pressure",
+    "dehydration",
+    "nausea"
+  ],
+  "safetyTips": ["asd these are optional", "das", "ads"],
+  "streetNames": ["molly", "emma", "MD", "Ecstasy"],
+  "dosage": {
+    "unit": "mg",
+    "threshold": 12,
+    "light": 123,
+    "common": 312,
+    "strong": 3123
+  },
+  "risks": ["risk1", "risk2", "risk3", "as many as you want"],
+  "images": {
+    "main": "extasy this is an image name, should be png with transparent bcg",
+    "compound": "xtc name for the svg image of the chem. compound"
+  },
+  "youtube": "https://youtube.com youtube link to the recommended video"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "MDMA",
+  "schedule": "1",
+  "category": "Stimulants",
+  "description": "3,4-methylenedioxy-methamphetamine (MDMA) is a synthetic drug that alters mood and perception (awareness of surrounding objects and conditions). It is chemically similar to both stimulants and hallucinogens, producing feelings of increased energy, pleasure, emotional warmth, and distorted sensory and time perception.",
+  "source": "https://psychonautwiki.org/wiki/Mdma",
+  "effectsDesc": "MDMA's effects last about 3 to 6 hours, although many users take a second dose as the effects of the first dose begin to fade.",
+  "effects": [
+    "stimulation and energy",
+    "euphoric tingling sensation that encompasses the entire body",
+    "feelings of love, empathy, openness and a pronounced sense of rejuvenation and euphoria"
+  ],
+  "negativeEffects": [
+    "increased heart rate",
+    "increased blood pressure",
+    "dehydration",
+    "nausea"
+  ],
+  "safetyTips": [
+    "don't mix with alcohol",
+    "stay well hydrated",
+    "keep yourself cool to avoid overheating"
+  ],
+  "streetNames": ["Molly", "Mandy", "Emma", "Ecstasy", "XTC"],
+  "dosage": {
+    "unit": "mg",
+    "threshold": "25-45",
+    "light": "45-75",
+    "common": "75-140",
+    "strong": "140-180"
+  },
+  "risks": [
+    "seizure",
+    "heat-stroke due to raised body temperature",
+    "valvulopathy (heart valve damage)",
+    "moderately addictive"
+  ],
+  "images": { "main": "mdma.png", "compound": "mdma.svg" },
+  "youtube": "https://www.youtube.com/embed/N8uB8IuP6Ps"
+}

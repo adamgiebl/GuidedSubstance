@@ -7,6 +7,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
   --darkblue: #011627;
   --white: #f7f7ff;
@@ -18,11 +19,14 @@
 }
 
 body {
+  font-family: var(--secondary-font);
   background: var(--darkblue);
   padding: 50px;
+  color: var(--white);
 }
 
 h1 {
+  font-size: 50px;
   text-align: center;
   display: block;
   color: var(--white);
