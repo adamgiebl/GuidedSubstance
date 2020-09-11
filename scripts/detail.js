@@ -1,5 +1,3 @@
-import fetchJson from "./utils.js";
-
 console.log("%cAll systems are go!", "color: royalblue; font-size: 25px");
 
 const main = document.querySelector("main");

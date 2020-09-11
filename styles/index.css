@@ -33,3 +33,16 @@ h1 {
   font-family: var(--primary-font);
   margin-bottom: 50px;
 }
+
+.drug-tile {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 40px;
+}
+
+.drug-tile img {
+  height: 150px;
+  margin-bottom: 20px;
+}
