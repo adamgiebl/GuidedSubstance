@@ -22,9 +22,6 @@
     "strong": 3123
   },
   "risks": ["risk1", "risk2", "risk3", "as many as you want"],
-  "images": {
-    "main": "extasy this is an image name, should be png with transparent bcg",
-    "compound": "xtc name for the svg image of the chem. compound"
-  },
+  "imageMain": "extasy this is an image name, should be png with transparent bcg",
   "youtube": "https://youtube.com youtube link to the recommended video"
 }

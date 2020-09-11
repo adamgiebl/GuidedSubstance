@@ -35,6 +35,6 @@
     "valvulopathy (heart valve damage)",
     "moderately addictive"
   ],
-  "images": { "main": "mdma.png", "compound": "mdma.svg" },
+  "imageMain": "mdma.png",
   "youtube": "https://www.youtube.com/embed/N8uB8IuP6Ps"
 }
