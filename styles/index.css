@@ -228,34 +228,34 @@ header img {
 }
 
 .cocaine {
-  top: 9vw;
+  top: 29vh;
   right: 10vw;
 }
 .fentanyl {
-  top: 23vw;
+  top: 5vh;
   right: 15vw;
 }
 .lsd {
-  top: 23vw;
+  top: -9vh;
   right: 32vw;
 }
 
 .mdma {
-  top: 1vw;
+  top: 7vh;
   left: 15vw;
 }
 .xanax {
-  bottom: 10vw;
+  bottom: 17vh;
   left: 15vw;
 }
 .psilocybin {
-  bottom: 35vw;
+  bottom: 12vh;
 }
 .thc-down {
-  top: 24vw;
+  top: -10vh;
   left: 35vw;
 }
 .thc-up {
-  bottom: 30vw;
+  bottom: 8vh;
   right: 20vw;
 }
