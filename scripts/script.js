@@ -35,9 +35,9 @@ const renderDetail = (allDrugs) => {
 
 fetchJson(API_URL).then((data) => {
   const push = AdamRouter.createRoutes({
-    Home: renderTiles(data),
+    GuidedSubstance: renderTiles(data),
     Detail: renderDetail(data),
   });
 
-  push("Home");
+  push("GuidedSubstance");
 });
