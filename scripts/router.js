@@ -31,6 +31,7 @@ export const createRoutes = (config) => {
   };
 
   window.addEventListener("popstate", (event) => {
+    clearContent();
     loadContent(event.state.id);
   });
 
