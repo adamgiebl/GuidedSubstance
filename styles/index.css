@@ -47,6 +47,7 @@ body {
   font-family: var(--secondary-font);
   background: var(--darkblue);
   color: var(--white);
+  padding-bottom: 500px;
 }
 
 /* ----------  H E A D E R  ------------*/
@@ -67,6 +68,7 @@ header img {
   flex-direction: column;
   align-items: center;
   padding-top: 200px;
+  position: relative;
 }
 .hero h1 {
   font-size: 70px;
@@ -77,6 +79,7 @@ header img {
   font-family: var(--primary-font);
   max-width: 6em;
   margin-bottom: 10px;
+  z-index: 10;
 }
 .hero h3 {
   font-size: 18px;
@@ -87,6 +90,14 @@ header img {
   font-family: var(--secondary-font);
   font-weight: 300;
   max-width: 200px;
+  z-index: 10;
+}
+
+.hero img {
+  position: absolute;
+  width: 15vw;
+  height: 15vw;
+  object-fit: contain;
 }
 
 /*----------  C A T E G O R I E S  ------------*/
@@ -145,7 +156,6 @@ header img {
   margin-top: 15px;
   max-width: 200px;
   display: flex;
-  justify-content: space-between;
 }
 .stimulants .tile {
   background: var(--blueish);
@@ -161,14 +171,29 @@ header img {
 }
 
 .tile {
-  padding-top: 11px;
   position: relative;
-  width: 97px;
-  height: 103px;
+  width: 120px;
+  height: 140px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-items: flex-start;
+  justify-content: space-between;
+  margin-right: 10px;
+  padding: 20px 20px 15px 20px;
+}
+
+.tile img {
+  height: 65px;
+  max-width: 100%;
+  object-fit: contain;
+}
+.tile p {
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+.tile h4 {
+  font-size: 15px;
+  font-weight: 300;
 }
 
 .tile:after {
@@ -192,10 +217,28 @@ header img {
 .opioids .tile:after {
   background: var(--purple);
 }
-.tile img {
-  height: 50px;
+
+.cocaine {
+  left: 50px;
+  top: 100px;
 }
-.tile p {
-  margin-bottom: 10px;
-  font-weight: 300;
+.fentanyl {
+  right: 150px;
+  bottom: 60px;
+}
+.mdma {
+  left: 600px;
+  top: 0px;
+}
+.xanax {
+  right: 170px;
+  top: 70px;
+}
+.psilocybin {
+  left: 100px;
+  bottom: 100px;
+}
+.thc {
+  bottom: 140px;
+  left: 550px;
 }

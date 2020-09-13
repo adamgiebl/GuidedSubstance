@@ -9,14 +9,21 @@ const API_URL =
 
 const renderTiles = (allDrugs) => {
   return () => {
+    const categories = document.querySelector("#categories").content;
+    const categoriesClone = categories.cloneNode(true);
+
     allDrugs.forEach((drug) => {
-      const t = document.querySelector("#drug-tile").content;
-      const c = t.cloneNode(true);
-      c.querySelector("hyper-link").setAttribute("item", drug.name);
-      c.querySelector("img").src = `./images/${drug.imageMain}`;
-      c.querySelector("h2").textContent = drug.name;
-      main.appendChild(c);
+      const tile = document.querySelector("#drug-tile").content;
+      const tileClone = tile.cloneNode(true);
+      tileClone.querySelector("hyper-link").setAttribute("item", drug.name);
+      tileClone.querySelector("img").src = `./images/${drug.imageMain}`;
+      tileClone.querySelector("h4").textContent = drug.name;
+      categoriesClone
+        .querySelector(`#${drug.category.toLowerCase()}`)
+        .appendChild(tileClone);
     });
+
+    main.appendChild(categoriesClone);
   };
 };
 
