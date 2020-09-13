@@ -1,0 +1,34 @@
+<svg id="LSD_Structure" xmlns="http://www.w3.org/2000/svg" width="179.412" height="265.102" viewBox="0 0 179.412 265.102">
+  <g id="Group_73" data-name="Group 73" transform="translate(0.5 0.433)">
+    <line id="Line_21" data-name="Line 21" y2="34.37" transform="translate(59.609 171.873)" fill="none" stroke="#ff006e" stroke-linecap="round" stroke-width="1"/>
+    <line id="Line_22" data-name="Line 22" x1="29.766" y2="17.166" transform="translate(59.609 154.706)" fill="none" stroke="#ff006e" stroke-linecap="round" stroke-width="1"/>
+    <line id="Line_23" data-name="Line 23" x1="22.354" y2="12.912" transform="translate(30.923 203.89)" fill="none" stroke="#ff006e" stroke-width="1"/>
+    <line id="Line_24" data-name="Line 24" x1="22.354" y1="12.914" transform="translate(30.923 161.314)" fill="none" stroke="#ff006e" stroke-width="1"/>
+    <line id="Line_25" data-name="Line 25" y2="25.772" transform="translate(94.576 124.63)" fill="none" stroke="#ff006e" stroke-width="1"/>
+    <line id="Line_26" data-name="Line 26" x1="23.178" y1="13.386" transform="translate(98.549 56.866)" fill="none" stroke="#ff006e" stroke-width="1"/>
+    <line id="Line_27" data-name="Line 27" y1="11.894" x2="20.546" transform="translate(119.153 159.979)" fill="none" stroke="#ff006e" stroke-width="1"/>
+    <line id="Line_28" data-name="Line 28" y1="25.786" transform="translate(5.201 176.165)" fill="none" stroke="#ff006e" stroke-width="1"/>
+    <line id="Line_29" data-name="Line 29" x1="29.778" y1="17.166" transform="translate(89.375 154.706)" fill="none" stroke="#ff006e" stroke-linecap="round" stroke-width="1"/>
+    <line id="Line_30" data-name="Line 30" y1="13.755" x2="23.819" transform="translate(116.53 53.497)" fill="none" stroke="#ff006e" stroke-width="1"/>
+    <line id="Line_31" data-name="Line 31" y1="11.92" x2="20.638" transform="translate(121.726 58.333)" fill="none" stroke="#ff006e" stroke-width="1"/>
+    <line id="Line_32" data-name="Line 32" x2="20.572" y2="11.882" transform="translate(158.09 159.965)" fill="none" stroke="#ff006e" stroke-width="1"/>
+    <line id="Line_33" data-name="Line 33" x1="8.543" y2="24.528" transform="translate(74.157 225.942)" fill="none" stroke="#ff006e" stroke-width="1"/>
+    <line id="Line_34" data-name="Line 34" x1="7.338" y1="21.107" transform="translate(29.804 223.459)" fill="none" stroke="#ff006e" stroke-width="1"/>
+    <path id="Path_71" data-name="Path 71" d="M68.845,129.488,57.475,162.194H29.3" transform="translate(20.57 93.971)" fill="none" stroke="#ff006e" stroke-width="1"/>
+    <path id="Path_72" data-name="Path 72" d="M99.066,101.625V77.153L69.3,59.989" transform="translate(49.827 43.132)" fill="none" stroke="#ff006e" stroke-width="1"/>
+    <path id="Path_73" data-name="Path 73" d="M81.869,59.989,52.117,77.205v34.369" transform="translate(37.258 43.132)" fill="none" stroke="#ff006e" stroke-linecap="round" stroke-width="1"/>
+    <path id="Path_74" data-name="Path 74" d="M34.926,134.065l29.766,17.163,29.778-17.163V99.695" transform="translate(24.683 72.178)" fill="none" stroke="#ff006e" stroke-linecap="round" stroke-width="1"/>
+    <path id="Path_75" data-name="Path 75" d="M52.11,42.1V17.623L81.875.433" transform="translate(37.253 -0.433)" fill="none" stroke="#ff006e" stroke-width="1"/>
+    <path id="Path_76" data-name="Path 76" d="M68.066,35.522,47.494,47.4,17.728,30.211" transform="translate(12.102 21.35)" fill="none" stroke="#ff006e" stroke-width="1"/>
+    <path id="Path_77" data-name="Path 77" d="M60.109,141.339,30.3,158.555.5,141.339v-34.37L30.3,89.752l29.8,17.216" transform="translate(-0.5 64.904)" fill="none" stroke="#ff006e" stroke-linecap="round" stroke-width="1"/>
+  </g>
+  <g id="Group_74" data-name="Group 74" transform="translate(20.724 37.536)">
+    <path id="Path_78" data-name="Path 78" d="M70.3,75.555,66.825,38.709l6.884,3.977,1.375-.795L71.919,75.555Z" transform="translate(27.793 -9.537)" fill="none" stroke="#ff006e" stroke-width="1"/>
+    <path id="Path_79" data-name="Path 79" d="M73.832,85.144l-2.367,25.2H69.85L67.481,85.147Z" transform="translate(28.273 24.431)" fill="none" stroke="#ff006e" stroke-width="1"/>
+    <text id="HN" transform="translate(26 222.566)" fill="none" stroke="#ff006e" stroke-width="1" font-size="18" font-family="Helvetica"><tspan x="-25.998" y="0">HN</tspan></text>
+    <text id="N" transform="translate(127.744 121.094)" fill="none" stroke="#ff006e" stroke-width="1" font-size="17" font-family="Helvetica"><tspan x="-6.138" y="0">N</tspan></text>
+    <text id="H" transform="translate(98.003 104.77)" fill="none" stroke="#ff006e" stroke-width="1" font-size="18" font-family="Helvetica"><tspan x="-6.5" y="0">H</tspan></text>
+    <text id="O" transform="translate(129.472 18)" fill="none" stroke="#ff006e" stroke-width="1" font-size="17" font-family="Helvetica"><tspan x="-6.612" y="0">O</tspan></text>
+    <text id="N-2" data-name="N" transform="translate(68.213 18)" fill="none" stroke="#ff006e" stroke-width="1" font-size="17" font-family="Helvetica"><tspan x="-6.138" y="0">N</tspan></text>
+  </g>
+</svg>
