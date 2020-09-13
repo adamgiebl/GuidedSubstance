@@ -1,0 +1,39 @@
+{
+  "name": "Marihuana",
+  "schedule": "1",
+  "category": "Stimulants",
+  "description": "Known as Marijuana (dried plant parts) is a preparation of the cannabis plant that produces psychoactive effects when consumed (via smoking, vaporizing, or ingestion). The principal psychoactive constituent of cannabis is tetrahydrocannabinol (THC), which makes up one of 483 known compounds in the plant, including at least 84 other cannabinoids such as cannabidiol (CBD), cannabinol (CBN), tetrahydrocannabivarin (THCV), and cannabigerol (CBG). At least three species are recognized: Cannabis sativa, Cannabis indica, and Cannabis ruderalis.",
+  "source": "https://psychonautwiki.org/wiki/Marihuana",
+  "effectsDesc": "When a person smokes marijuana, THC quickly passes from the lungs into the bloodstream. The blood carries the chemical to the brain and other organs throughout the body. The body absorbs THC more slowly when the person eats or drinks it. In that case, they generally feel the effects after 30 minutes to 1 hour.",
+  "effects": [
+    "spontaneous bodily sensations",
+    "appetite enhancement",
+    "changes in felt gravity",
+    "aInternal hallucination"
+  ],
+  "negativeEffects": [
+    "time distortion",
+    "dehydration",
+    "mood disorders",
+    "paranoia",
+    "anxiety"
+  ],
+  "safetyTips": [
+    "keep calm and drink plenty of water",
+    "move to a safe and relaxing location",
+    "avoid alcohol, which can exacerbate the experience",
+    "breathe and remember that the experience will pass"
+  ],
+  "streetNames": ["marihuana", "weed", "pot", "grass", "herb", "ganja"],
+  "dosage": {
+    "unit": "mg",
+    "threshold": "25",
+    "light": "33 - 66",
+    "common": "66 - 100",
+    "strong": "100 - 150"
+  },
+  "risks": ["memory suppression", "paranoia", "psychosis"],
+  "imageMain": "weed.png",
+  "imageCompound": "thc.svg",
+  "youtube": "https://www.youtube.com/embed/kD24KRvHwQk"
+}

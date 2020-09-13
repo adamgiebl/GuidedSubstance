@@ -53,5 +53,6 @@
     "moderately addictive"
   ],
   "imageMain": "fentanyl.png",
-  "youtube": "https://www.youtube.com/watch?v=C0tW8FWBm1g"
+  "imageCompound": "fentanyl.svg",
+  "youtube": "https://www.youtube.com/embed/C0tW8FWBm1g"
 }

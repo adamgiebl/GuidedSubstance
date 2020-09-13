@@ -1,6 +1,6 @@
 {
   "name": "MDMA",
-  "schedule": "1",
+  "schedule": "2",
   "category": "Stimulants",
   "description": "3,4-methylenedioxy-methamphetamine (MDMA) is a synthetic drug that alters mood and perception (awareness of surrounding objects and conditions). It is chemically similar to both stimulants and hallucinogens, producing feelings of increased energy, pleasure, emotional warmth, and distorted sensory and time perception.",
   "source": "https://psychonautwiki.org/wiki/Mdma",
@@ -36,5 +36,6 @@
     "moderately addictive"
   ],
   "imageMain": "mdma.png",
+  "imageCompound": "mdma.svg",
   "youtube": "https://www.youtube.com/embed/N8uB8IuP6Ps"
 }

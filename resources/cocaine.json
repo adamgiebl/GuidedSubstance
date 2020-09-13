@@ -1,0 +1,41 @@
+{
+  "name": "Cocaine",
+  "schedule": "2",
+  "category": "Stimulant",
+  "description": " Cocaine is extracted from the leaves of the coca plant. The plant originates from South America, and the South American indigenous chewed coca leaves, among other things, to counteract fatigue and altitude sickness. There are several types of cocaine, such as 'crack' and 'freebase'. During manufacture, various chemicals are used.",
+  "source": "https://psychonautwiki.org/wiki/Cocaine",
+  "effectsDesc": "Cocaine produces a short, intense intoxication, reminiscent of amphetamine intoxication that takes about 30 minutes.",
+  "effects": [
+    "extremely energetic and stimulating",
+    "no feelings of fatigue",
+    "focus enhancement - this component is most effective at low to moderate dosages as anything higher will usually impair concentration",
+    "motivation enhancement, increased libido, increased music appreciation"
+  ],
+  "negativeEffects": [
+    "irritability and depression after comedown",
+    "anxiety and tension",
+    "supresses apetite",
+    "abnormal heartbeat"
+  ],
+  "safetyTips": [
+    "don't mix with other substances",
+    "avoid if you have a known heart condition or family history of heart conditions"
+  ],
+  "streetNames": ["Coke", "White", "Blow", "Snow"],
+  "dosage": {
+    "unit": "mg",
+    "threshold": "5",
+    "light": "10 - 30",
+    "common": "30 - 60",
+    "strong": "60 - 90"
+  },
+  "risks": [
+    "overdose",
+    "heart problems, such as cardiac arrest that can be fatal",
+    "sniffing cocaine can cause nosebleeds and eventually destroy the mucous membranes of the nose",
+    "highly adictive"
+  ],
+  "imageMain": "cocaine.png",
+  "imageCompound": "cocaine.svg",
+  "youtube": "https://www.youtube.com/embed/9pNs3kNBfu0"
+}

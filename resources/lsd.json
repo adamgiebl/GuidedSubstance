@@ -1,0 +1,40 @@
+{
+  "name": "LSD",
+  "schedule": "2",
+  "category": "Psychedelics",
+  "description": "LSD (D-lysergic acid diethylamide) is one of the most powerful mind-altering chemicals. It is a clear or white odorless material made from lysergic acid, which is found in a fungus that grows on rye and other grains.",
+  "source": "https://psychonautwiki.org/wiki/Lsd",
+  "effectsDesc": "The subjective effects of LSD can be broken down into several components which progressively intensify proportional to dosage in a nonlinear manner. In comparison to other psychedelics such as psilocybin mushrooms, LSA and ayahuasca, LSD is significantly more stimulating and fast-paced in both its physical and cognitive effects and produces a wide variety of effects that can potentially be attributed to its binding activity at a range of CNS receptors other than serotonin, such as those of dopamine and norepinephrine.",
+  "effects": [
+    "analysis enhancement - LSD is commonly reported to give the user the ability to analyze situations in a novel and beneficial way.",
+    "colour enhancement - in comparison to other psychedelics, this effect is often reported to be brighter and more \"radiant\" in its character.",
+    "creativity enhancement - LSD is well-known for its ability to enhance creativity and out-of-the-box thinking.",
+    "emotion enhancement - LSD strongly enhances the user's ability to experience emotion",
+    "spirituality enhancement, auditory enhancement, existential self-realization, unity and interconnectedness, increased sense of humor and much more..."
+  ],
+  "negativeEffects": ["mild nausea", "appetite supression", "time distortion"],
+  "safetyTips": [
+    "avoid unfamiliar or hazardous territory (heights/traffic)",
+    "stay hydrated",
+    "don't be on your own, have someone you know looking after you",
+    "don't combine with other drugs",
+    "test your LSD",
+    "be in a good mood before use"
+  ],
+  "streetNames": ["LSD-25", "Lucy", "L", "Acid", "Cid", "Tabs", "Blotter"],
+  "dosage": {
+    "unit": "µg",
+    "threshold": "15",
+    "light": "25 - 75",
+    "common": "75 - 150",
+    "strong": "150 - 300"
+  },
+  "risks": [
+    "psychological trauma",
+    "may trigger or exacerbate symptoms (e.g. delusions, mania, psychosis) in those who have or are predisposed to mental illness such as bipolar disorder or schizophrenia",
+    "poisioning due to ingesting different (mimic) substance than LSD such as 25x-NBOMe and DOx"
+  ],
+  "imageMain": "lsd.png",
+  "imageCompound": "lsd.svg",
+  "youtube": "https://www.youtube.com/embed/bHOVZ_Tb3ik"
+}

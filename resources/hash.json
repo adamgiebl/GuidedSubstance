@@ -1,0 +1,36 @@
+{
+  "name": "Hash",
+  "schedule": "1",
+  "category": "Cannabis",
+  "description": "Consists of resin (the dried plant juice), which is pressed together with plant parts and binder. Hash is found in lumps or plates, and the color can be black, brown, red, or green. Hash contains an average of 6-8% THC.",
+  "source": "https://psychonautwiki.org/wiki/Hashish",
+  "effectsDesc": "Some short-term effects of smoking hashish are memory problems, learning problems, hard time keeping concentration, hallucinations, and high heart rate and blood pressure. These effects can take place within minutes of smoking hashish and can last for several hours.",
+  "effects": [
+    "spontaneous bodily sensations",
+    "appetite enhancement",
+    "changes in felt gravity"
+  ],
+  "negativeEffects": [
+    "lethargy, difficulty concentrating",
+    "paranoia",
+    "dehydration",
+    "anxiety"
+  ],
+  "safetyTips": [
+    "keep calm and eat somenthing sweet",
+    "move to a safe and relaxing location",
+    "avoid alcohol, which can exacerbate the experience"
+  ],
+  "streetNames": ["hash", "weed", "Skunk", "grass", "herb", "ganja"],
+  "dosage": {
+    "unit": "mg",
+    "threshold": "25",
+    "light": "33 - 66",
+    "common": "66 - 100",
+    "strong": "100 - 150"
+  },
+  "risks": ["memory suppression", "paranoia", "psychosis"],
+  "imageMain": "hash.png",
+  "imageCompound": "thc.svg",
+  "youtube": "https://www.youtube.com/embed/Ohbx8DAG5W8"
+}

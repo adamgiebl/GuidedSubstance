@@ -1,0 +1,46 @@
+{
+  "name": "Mushrooms",
+  "schedule": "2",
+  "category": "Psychedelics",
+  "description": "Psilocybin mushrooms are a family of psychoactive mushrooms that contain the psychedelic tryptamine psilocybin. Psilocybin mushrooms occur on all continents and have been taxonomically classified into over 200 species, the most potent of which belong to the genus Psilocybe.",
+  "source": "https://psychonautwiki.org/wiki/Mushrooms",
+  "effectsDesc": "Like other psychedelics, psilocybin mushrooms produce their effects by acting on serotonin receptors in the brain. The hallucinogenic effects of psilocybin usually occur within 30 minutes of ingestion and last between 4 and 6 hours.",
+  "effects": [
+    "analysis enhancement -  this effect is consistent in its manifestation and outrospection dominant",
+    "colour enhancement - relative to other psychedelics, this effect may appear to be more saturated",
+    "empathy, affection, and sociability enhancement",
+    "emotion enhancement - this effect can be described as being more prominent, consistent and profound when compared to other traditional psychedelics such as mescaline or LSD",
+    "spirituality enhancement, auditory enhancement, existential self-realization, unity and interconnectedness and much more..."
+  ],
+  "negativeEffects": [
+    "nausea",
+    "delusion",
+    "runny nose",
+    "watery eyes",
+    "muscle contractions"
+  ],
+  "safetyTips": [
+    "avoid unfamiliar or hazardous territory (heights/traffic)",
+    "stay hydrated",
+    "don't be on your own, have someone you know looking after you",
+    "don't combine with other drugs",
+    "test your mushrooms",
+    "be in a good mood before use"
+  ],
+  "streetNames": ["magic mushrooms", "psychedelic mushrooms", "shrooms"],
+  "dosage": {
+    "unit": "g",
+    "threshold": "0.25 - 0.5",
+    "light": "0.5 - 1",
+    "common": "1 - 2.5",
+    "strong": "2.5 - 5"
+  },
+  "risks": [
+    "psychological trauma",
+    "may trigger or exacerbate symptoms (e.g. delusions, mania, psychosis) in those who have or are predisposed to mental illness such as bipolar disorder or schizophrenia",
+    "poisioning due to ingesting a different species of mushroom which can be lethal"
+  ],
+  "imageMain": "mushroom.png",
+  "imageCompound": "psilocybin.svg",
+  "youtube": "https://www.youtube.com/embed/E7T1BbnFxpM"
+}
