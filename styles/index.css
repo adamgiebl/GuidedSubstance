@@ -228,26 +228,34 @@ header img {
 }
 
 .cocaine {
-  left: 50px;
-  top: 100px;
+  top: 9vw;
+  right: 10vw;
 }
 .fentanyl {
-  right: 150px;
-  bottom: 60px;
+  top: 23vw;
+  right: 15vw;
 }
+.lsd {
+  top: 23vw;
+  right: 32vw;
+}
+
 .mdma {
-  left: 600px;
-  top: 0px;
+  top: 1vw;
+  left: 15vw;
 }
 .xanax {
-  right: 170px;
-  top: 70px;
+  bottom: 10vw;
+  left: 15vw;
 }
 .psilocybin {
-  left: 100px;
-  bottom: 100px;
+  bottom: 35vw;
 }
-.thc {
-  bottom: 140px;
-  left: 550px;
+.thc-down {
+  top: 24vw;
+  left: 35vw;
+}
+.thc-up {
+  bottom: 30vw;
+  right: 20vw;
 }
