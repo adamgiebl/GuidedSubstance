@@ -93,7 +93,7 @@ header img {
 .categories {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 200px;
+  grid-gap: 50px;
   margin: auto;
   max-width: 1200px;
 }
@@ -105,7 +105,7 @@ header img {
   overflow-wrap: break-word;
   display: block;
   font-family: var(--primary-font);
-  font-size: 95px;
+  font-size: 75px;
   text-transform: uppercase;
   width: 100%;
   font-weight: 900;
@@ -115,21 +115,21 @@ header img {
 
 .category.opioids h2 {
   color: var(--purple);
-  max-width: 159px;
+  max-width: 128px;
 }
 
 .category.psychedelics h2 {
   color: var(--pink);
-  max-width: 200px;
+  max-width: 160px;
 }
 
 .category.stimulants h2 {
   color: var(--blue);
-  max-width: 200px;
+  max-width: 160px;
 }
 .category.cannabis h2 {
   color: var(--green);
-  max-width: 190px;
+  max-width: 129px;
 }
 
 /*-----------  C A T E G O R Y-C O N T E N T  -------*/
@@ -139,9 +139,10 @@ header img {
   font-family: var(--secondary-font);
   font-size: 16px;
   font-weight: 300;
-  max-width: 500px;
+  max-width: 600px;
 }
 .drug-tiles {
+  margin-top: 15px;
   max-width: 200px;
   display: flex;
   justify-content: space-between;
@@ -160,7 +161,14 @@ header img {
 }
 
 .tile {
+  padding-top: 11px;
   position: relative;
+  width: 97px;
+  height: 103px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: flex-start;
 }
 
 .tile:after {
@@ -185,7 +193,6 @@ header img {
   background: var(--purple);
 }
 .tile img {
-  margin: 15px;
   height: 50px;
 }
 .tile p {
