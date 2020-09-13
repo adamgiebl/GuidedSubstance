@@ -1,46 +1,57 @@
 {
-    "name": "Fentanyl",
-    "schedule": "2",
-    "category": "Opioids",
-    "description": " Fentanyl is a potent opioid substance of the piperidine class. It is a strong agonist at the μ-opioid receptors and approximately 40 to 50 times more potent than pharmaceutical grade (i.e. 100% pure) heroi and roughly 80 to 100 times more potent than morphine",
-    "source": "https://psychonautwiki.org/wiki/Fentanyl",
-    "effectsDesc": "Like heroin, morphine, and other opioid drugs, fentanyl works by binding to the body's opioid receptors, which are found in areas of the brain that control pain and emotions.8 After taking opioids many times, the brain adapts to the drug, diminishing its sensitivity, making it hard to feel pleasure from anything besides the drug",
-    "effects": [
-    "stimulation and energy",
-    "euphoric tingling sensation that encompasses the entire body",
-    "feelings of love, empathy, openness and a pronounced sense of rejuvenation and euphoria"
+  "name": "Fentanyl",
+  "schedule": "2",
+  "category": "Opioids",
+  "description": " Fentanyl is a potent opioid substance of the piperidine class. It is a strong agonist at the μ-opioid receptors and approximately 40 to 50 times more potent than pharmaceutical grade (i.e. 100% pure) heroin and roughly 80 to 100 times more potent than morphine",
+  "source": "https://psychonautwiki.org/wiki/Fentanyl",
+  "effectsDesc": "Like heroin, morphine, and other opioid drugs, fentanyl works by binding to the body's opioid receptors, which are found in areas of the brain that control pain and emotions. After taking opioids many times, the brain adapts to the drug, diminishing its sensitivity, making it hard to feel pleasure from anything besides the drug",
+  "effects": [
+    "sedation",
+    "pain relief",
+    "physical euphoria",
+    "cognitive euphoria",
+    "anxiety suppression"
   ],
-    "negativeEffects": [
-   
-"drowsiness"
-"nausea"
-"confusion"
-"constipation"
-"sedation"
-"problems breathing"
-"unconsciousness"
-"itchiness"
-"double vision - at high doses"
+  "negativeEffects": [
+    "drowsiness",
+    "nausea",
+    "confusion",
+    "constipation",
+    "sedation",
+    "problems breathing",
+    "unconsciousness",
+    "itchiness",
+    "double vision"
   ],
-    "safetyTips": [
+  "safetyTips": [
     "don't consume with depressants such as opiates, benzodiazepines, barbiturates, gabapentinoids, thienodiazepines, alcohol or other GABAergic substances",
     "wear gloves while handling",
-    "carefully measure the amount of the substance before use, never make a rough guess of the weight"
+    "the amount has to be carefully measured before use, never make a rough guess of the weight"
   ],
-    "streetNames": ["Apache", "Mandy", " China Girl", "China White", " Friend", "Goodfellas", " Jackpot", "Mur,der 8","Tango & Cash",]
-    "dosage": {
-        "unit": "mg",
-        "threshold": "5-12",
-        "light": "12-25",
-        "common": "25-50",
-        "strong": "50-100"
-    },
-    "risks": [
+  "streetNames": [
+    "Apache",
+    "Mandy",
+    "China Girl",
+    "China White",
+    "Friend",
+    "Goodfellas",
+    "Jackpot",
+    "Mur,der 8",
+    "Tango & Cash"
+  ],
+  "dosage": {
+    "unit": "μg",
+    "threshold": "5-12",
+    "light": "12-25",
+    "common": "25-50",
+    "strong": "50-100"
+  },
+  "risks": [
     "overdose",
     "potentially fatal at heavy dosage",
     "nausea and vomiting",
     "moderately addictive"
   ],
-    "imageMain": "fentanyl.png",
-    "youtube": "https://www.youtube.com/watch?v=C0tW8FWBm1g"
+  "imageMain": "fentanyl.png",
+  "youtube": "https://www.youtube.com/watch?v=C0tW8FWBm1g"
 }

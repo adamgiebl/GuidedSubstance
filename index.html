@@ -3,16 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+    <title>GuidedSubstance</title>
     <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/detail.css" />
   </head>
   <body>
-    <h1>GuidedSubstance</h1>
-    <main></main>
+    <header>
+      <hyper-link to="Home">
+        <img src="./images/logo.svg" alt="GuidedSubstance" />
+      </hyper-link>
+    </header>
+    <main id="content"></main>
     <template id="drug-tile">
-      <article class="drug-tile">
+      <hyper-link to="Detail" item="{name}">
+        <article class="drug-tile">
+          <img src="{imageMain}" alt="{name}" />
+          <h2>{name}</h2>
+        </article>
+      </hyper-link>
+    </template>
+    <template id="drug-detail">
+      <article class="drug-detail">
         <img src="{imageMain}" alt="{name}" />
         <h2>{name}</h2>
+        <p>{description}</p>
+        <div class="video-container">
+          <iframe
+            src="{youtube}"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
       </article>
     </template>
     <script src="./scripts/script.js" type="module"></script>
