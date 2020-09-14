@@ -30,11 +30,27 @@ const renderTiles = (allDrugs) => {
 const renderDetail = (allDrugs) => {
   return (name) => {
     const drug = allDrugs.find((drug) => drug.name === name);
+    console.log(drug);
     const t = document.querySelector("#drug-detail").content;
     const c = t.cloneNode(true);
-    c.querySelector("img").src = `./images/${drug.imageMain}`;
+    c.querySelector(".image-main").src = `./images/${drug.imageMain}`;
     c.querySelector("h2").textContent = drug.name;
-    c.querySelector("p").textContent = drug.description || "";
+    c.querySelector(".description-content").textContent =
+      drug.description || "";
+    c.querySelector(".description-link").setAttribute(
+      "href",
+      drug.source || ""
+    );
+    c.querySelector(".effects-description").textContent = drug.effectsDesc;
+    console.log(
+      "renderDetail -> c.querySelector('.image-compound')",
+      c.querySelector(".image-compound")
+    );
+    c.querySelector(".image-compound").src = `./images/${drug.imageCompound}`;
+
+    c.querySelector(".street-names").textContent = drug.streetNames;
+    c.querySelector(".schedule").textContent = "Schedule " + drug.schedule;
+    c.querySelector(".category").textContent = drug.category;
     c.querySelector("iframe").src = drug.youtube;
     main.appendChild(c);
   };
@@ -46,5 +62,5 @@ fetchJson(API_URL).then((data) => {
     Detail: renderDetail(data),
   });
 
-  push("GuidedSubstance");
+  push("Detail", "LSD");
 });

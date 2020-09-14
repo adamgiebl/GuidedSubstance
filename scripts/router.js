@@ -27,12 +27,13 @@ export const createRoutes = (config) => {
     document.title = name ? `${id}/${name}` : id;
     clearContent();
     loadContent(id, name);
-    window.history.pushState({ id }, `${id}`, ``);
+    window.history.pushState({ id, name }, `${id}`, ``);
   };
 
-  window.addEventListener("popstate", (event) => {
+  window.addEventListener("popstate", ({ state: { id, name } }) => {
+    document.title = name ? `${id}/${name}` : id;
     clearContent();
-    loadContent(event.state.id);
+    loadContent(id, name);
   });
 
   window.router = { routeTo };
