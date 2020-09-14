@@ -24,7 +24,7 @@
     "avoid alcohol, which can exacerbate the experience",
     "breathe and remember that the experience will pass"
   ],
-  "streetNames": ["marihuana", "weed", "pot", "grass", "herb", "ganja"],
+  "streetNames": ["Marihuana", "Weed", "Pot", "Grass", "Herb", "Ganja"],
   "dosage": {
     "unit": "mg",
     "threshold": "25",
