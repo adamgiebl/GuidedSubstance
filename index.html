@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./styles/detail.css" />
   </head>
   <body>
-    <header>
+    <header class="home-header">
       <hyper-link to="GuidedSubstance">
         <img src="./images/logo.svg" alt="GuidedSubstance" />
       </hyper-link>
@@ -30,16 +30,36 @@
     <template id="drug-tile">
       <hyper-link to="Detail" item="{name}">
         <article class="tile">
-          <img src="{src}" alt="{name}" />
+          <img class="image-main" src="{src}" alt="{name}" />
           <h4>{name}</h4>
         </article>
       </hyper-link>
     </template>
     <template id="drug-detail">
-      <article class="drug-detail">
-        <img src="{imageMain}" alt="{name}" />
-        <h2>{name}</h2>
-        <p>{description}</p>
+      <main class="drug-detail">
+        <header class="detail-header">
+          <img class="image-main" src="{imageMain}" alt="{name}" />
+          <div class="header-container">
+            <h2>{name}</h2>
+            <span class="street-names">{street names}</span>
+            <div class="description">
+              <p class="description-content">{description}</p>
+              <a href="{source}" class="description-link">Read more...</a>
+            </div>
+
+            <div class="meta">
+              <span class="schedule">{schedule}</span>
+              <span class="category">{category}</span>
+            </div>
+          </div>
+        </header>
+        <section class="section-effects">
+          <div class="effects">
+            <h3 class="section-heading">Effects</h3>
+            <p class="effects-description">{effectsDesc}</p>
+          </div>
+          <img class="image-compound" src="{imageCompound}" alt="compound" />
+        </section>
         <div class="video-container">
           <iframe
             src="{youtube}"
@@ -48,7 +68,7 @@
             allowfullscreen
           ></iframe>
         </div>
-      </article>
+      </main>
     </template>
     <template id="categories">
       <section class="hero">
