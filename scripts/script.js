@@ -52,6 +52,18 @@ const renderDetail = (allDrugs) => {
     c.querySelector(".schedule").textContent = "Schedule " + drug.schedule;
     c.querySelector(".category").textContent = drug.category;
     c.querySelector("iframe").src = drug.youtube;
+    drug.effects.forEach((effect) => {
+      const li = document.createElement("li");
+      li.textContent = effect;
+      c.querySelector("#actual-effects").appendChild(li);
+    });
+    drug.negativeEffects.forEach((effect) => {
+      const li = document.createElement("li");
+      li.textContent = effect;
+      c.querySelector("#side-effects").appendChild(li);
+    });
+    // c.querySelector("#actual-effects").
+
     main.appendChild(c);
   };
 };
@@ -62,5 +74,5 @@ fetchJson(API_URL).then((data) => {
     Detail: renderDetail(data),
   });
 
-  push("Detail", "LSD");
+  push("Detail", "Fentanyl");
 });

@@ -24,7 +24,7 @@
       <hyper-link to="GuidedSubstance">
         <img src="./images/logo.svg" alt="GuidedSubstance" />
       </hyper-link>
-      <div class="light"></div>
+      <div class="shadow"></div>
     </header>
     <main id="content"></main>
     <template id="drug-tile">
@@ -59,6 +59,38 @@
             <p class="effects-description">{effectsDesc}</p>
           </div>
           <img class="image-compound" src="{imageCompound}" alt="compound" />
+        </section>
+        <section class="section-effects-comparison">
+          <div class="actual-effects">
+            <h4>
+              <strong>Effects</strong> may include but are not limited to:
+            </h4>
+            <ul class="effects-list" id="actual-effects"></ul>
+          </div>
+          <div class="side-effects">
+            <h4>
+              <strong>Side-effects</strong> may include but are not limited to:
+            </h4>
+            <ul class="effects-list" id="side-effects"></ul>
+          </div>
+        </section>
+        <section class="section-dosage">
+          <h4 class="section-heading">Dosage</h4>
+          <div class="dosage">
+            <div class="range"></div>
+            <div class="dosage-columns">
+              <div class="dosage-column threshold">threshold</div>
+              <div class="dosage-column light">light</div>
+              <div class="dosage-column common">common</div>
+              <div class="dosage-column strong">strong</div>
+            </div>
+            <div class="dosage-columns">
+              <div class="dosage-column threshold">threshold</div>
+              <div class="dosage-column light">light</div>
+              <div class="dosage-column common">common</div>
+              <div class="dosage-column strong">strong</div>
+            </div>
+          </div>
         </section>
         <div class="video-container">
           <iframe

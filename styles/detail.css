@@ -3,7 +3,7 @@
   margin: auto;
   padding: 0 40px;
 }
-
+/* ---------    H E A D E R   ---------- */
 .detail-header {
   display: flex;
   margin-bottom: 50px;
@@ -22,7 +22,7 @@
 .header-container h2 {
   font-family: var(--primary-font);
   font-size: 95px;
-  line-height: 1em;
+
   margin-left: -0.06em;
 }
 
@@ -32,11 +32,12 @@
   font-size: 18px;
   font-weight: 300;
   padding-bottom: 20px;
+  max-width: 500px;
 }
 
 .header-container .description {
   font-family: var(--secondary-font);
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.5em;
 }
@@ -83,6 +84,7 @@
   color: var(--blue);
 }
 
+/* ---------  E F F E C T S  --------*/
 .section-effects {
   display: flex;
   justify-content: space-between;
@@ -90,14 +92,14 @@
 
 .effects-description {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 18px;
   max-width: 500px;
 }
 .section-heading {
   position: relative;
-  font-size: 30px;
+  font-size: 25px;
   font-family: var(--primary-font);
-  font-weight: 900;
+  font-weight: 800;
 }
 .section-heading:before {
   position: absolute;
@@ -110,4 +112,65 @@
   height: 30px;
   content: "";
   bottom: 1px;
+}
+/* ---------   C O M P A R I S O N   -------*/
+.section-effects-comparison {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.section-effects-comparison h4 {
+  margin-bottom: 25px;
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 18px;
+}
+.effects-list {
+  list-style-type: none;
+}
+
+.effects-list li {
+  font-family: var(--secondary-font);
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 10px;
+  position: relative;
+  background: var(--purpleish);
+  padding: 22px;
+}
+.effects-list li:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -2px;
+  background: var(--purple);
+  height: 60%;
+  width: 4px;
+}
+#side-effects li {
+  background: var(--redish);
+}
+#side-effects li:before {
+  background: var(--red);
+}
+.dosage {
+  position: relative;
+  display: inline-block;
+}
+.dosage-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  width: 700px;
+}
+.range {
+  position: absolute;
+  background: red;
+  width: 100%;
+  height: 7px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  border-radius: 4px;
 }

@@ -34,10 +34,12 @@ hyper-link {
   --green: #89fc00;
   --purple: #a243ff;
   --blue: #00bbf9;
+  --red: #ff1c1c;
   --pinkish: #ff006e17;
   --greenish: #89fc0017;
   --purpleish: #a243ff17;
   --blueish: #00bbf917;
+  --redish: #ff1c1c17;
 
   --primary-font: "Maven Pro", sans-serif;
   --secondary-font: "Roboto Slab", sans-serif;
@@ -61,7 +63,7 @@ body {
 .home-header img {
   width: 130px;
 }
-.light {
+.shadow {
   position: absolute;
   top: 0;
   left: 0;
