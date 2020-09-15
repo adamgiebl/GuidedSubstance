@@ -181,6 +181,24 @@ body {
   max-width: 200px;
   display: flex;
 }
+
+.tile {
+  position: relative;
+  width: 120px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10px;
+  padding: 20px 20px 15px 20px;
+  background: var(--blueish);
+}
+
+.tile:hover {
+  background: red;
+}
+
 .stimulants .tile {
   background: var(--blueish);
 }
@@ -194,16 +212,17 @@ body {
   background: var(--purpleish);
 }
 
-.tile {
-  position: relative;
-  width: 120px;
-  height: 140px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  margin-right: 10px;
-  padding: 20px 20px 15px 20px;
+.stimulants.tile {
+  background: var(--blueish);
+}
+.psychedelics.tile {
+  background: var(--pinkish);
+}
+.cannabis.tile {
+  background: var(--greenish);
+}
+.opioids.tile {
+  background: var(--purpleish);
 }
 
 .tile img {
@@ -228,7 +247,9 @@ body {
   left: 50%;
   transform: translateX(-50%);
   height: 4px;
+  background: var(--blue);
 }
+
 .stimulants .tile:after {
   background: var(--blue);
 }
@@ -242,6 +263,19 @@ body {
   background: var(--purple);
 }
 
+.stimulants.tile:after {
+  background: var(--blue);
+}
+.psychedelics.tile:after {
+  background: var(--pink);
+}
+.cannabis.tile:after {
+  background: var(--green);
+}
+.opioids.tile:after {
+  background: var(--purple);
+}
+
 .cocaine {
   top: 29vh;
   right: 10vw;
@@ -251,8 +285,9 @@ body {
   right: 15vw;
 }
 .lsd {
-  top: -9vh;
+  top: -2vh;
   right: 32vw;
+  height: 19vh !important;
 }
 
 .mdma {
