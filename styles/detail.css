@@ -183,7 +183,13 @@
   transform: translateY(-50%);
   left: 0;
   border-radius: 4px;
-  background: linear-gradient(to right, lightblue, limegreen, orange, var(--red));
+  background: linear-gradient(
+    to right,
+    lightblue,
+    limegreen,
+    orange,
+    var(--red)
+  );
 }
 
 /* ---------   S A F E T Y - T  I P S  +  R I S K S   S E C T I O N    -----------*/
@@ -233,19 +239,4 @@
 
 .video-container {
   margin-top: 40px;
-}
-/* selecting different selectors 
-header, .safety-list (
-)*/
-
-/* header with a class of safety-list
-header.safety-list {
-}*/
-
-/* a class inside another element of class
-header .safety-list {
-}*/
-nav {
-  display: flex;
-  justify-content: space-between;
 }
