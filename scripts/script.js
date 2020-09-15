@@ -63,6 +63,15 @@ const renderDetail = (allDrugs) => {
       c.querySelector("#side-effects").appendChild(li);
     });
 
+    c.querySelector(".threshold-value").textContent =
+      drug.dosage.threshold + drug.dosage.unit;
+    c.querySelector(".light-value").textContent =
+      drug.dosage.light + drug.dosage.unit;
+    c.querySelector(".common-value").textContent =
+      drug.dosage.common + drug.dosage.unit;
+    c.querySelector(".strong-value").textContent =
+      drug.dosage.strong + drug.dosage.unit;
+
     drug.safetyTips.forEach((tip) => {
       const li = document.createElement("li");
       li.textContent = tip;
@@ -85,5 +94,5 @@ fetchJson(API_URL).then((data) => {
     Detail: renderDetail(data),
   });
 
-  push("Detail", "Fentanyl");
+  push("Detail", "Marihuana");
 });
