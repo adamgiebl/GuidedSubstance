@@ -152,7 +152,7 @@ body {
   .hero img {
     display: none;
   }
-  .home-header img {
+  .home-header .logo {
     width: 100px;
   }
 }
@@ -164,7 +164,7 @@ body {
   grid-gap: 50px;
   margin: auto;
   max-width: 1200px;
-  margin-top: 70px;
+  margin-top: 40px;
 }
 
 .category {

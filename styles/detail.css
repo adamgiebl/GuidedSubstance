@@ -4,6 +4,14 @@
   margin-top: 70px;
   padding: 0 60px;
 }
+@media only screen and (max-width: 550px) {
+  .drug-detail {
+    padding: 0 30px;
+  }
+  .section-heading:before {
+    content: none !important;
+  }
+}
 /* ---------    H E A D E R   ---------- */
 .detail-header {
   display: flex;
@@ -281,4 +289,7 @@
 
 .video-container {
   margin-top: 40px;
+}
+.video-section {
+  margin-bottom: 40px;
 }
