@@ -24,13 +24,20 @@
       <hyper-link to="GuidedSubstance">
         <img src="./images/logo.svg" alt="GuidedSubstance" />
       </hyper-link>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>All drugs</li>
+          <li>Disclaimer</li>
+        </ul>
+      </nav>
       <div class="shadow"></div>
     </header>
     <main id="content"></main>
     <template id="drug-tile">
       <hyper-link to="Detail" item="{name}">
         <article class="tile">
-          <img class="image-main" src="{src}" alt="{name}" />
+          <img src="{src}" alt="{name}" />
           <h4>{name}</h4>
         </article>
       </hyper-link>
