@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="33" viewBox="0 0 36 33">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="36" height="33" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Repeat_Grid_2" data-name="Repeat Grid 2" clip-path="url(#clip-path)">
+    <g transform="translate(-162 -326)">
+      <g id="Component_3_11" data-name="Component 3 – 11" transform="translate(198 326) rotate(90)">
+        <rect id="Rectangle_228" data-name="Rectangle 228" width="36" height="5" transform="translate(5) rotate(90)" fill="#fff"/>
+      </g>
+    </g>
+    <g transform="translate(-162 -314)">
+      <g id="Component_3_11-2" data-name="Component 3 – 11" transform="translate(198 326) rotate(90)">
+        <rect id="Rectangle_228-2" data-name="Rectangle 228" width="36" height="5" transform="translate(5) rotate(90)" fill="#fff"/>
+      </g>
+    </g>
+    <g transform="translate(-162 -302)">
+      <g id="Component_3_11-3" data-name="Component 3 – 11" transform="translate(198 326) rotate(90)">
+        <rect id="Rectangle_228-3" data-name="Rectangle 228" width="36" height="5" transform="translate(5) rotate(90)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
