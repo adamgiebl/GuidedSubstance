@@ -72,6 +72,11 @@ body {
   display: flex;
   align-items: center;
 }
+.navigation ul li {
+  font-family: var(--secondary-font);
+  font-weight: 300;
+  font-size: 14px;
+}
 .navigation li {
   margin-right: 30px;
 }
