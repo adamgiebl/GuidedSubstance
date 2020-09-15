@@ -42,7 +42,7 @@ hyper-link {
 
   --primary-font: "Maven Pro", sans-serif;
   --secondary-font: "Roboto Slab", sans-serif;
-  --header-height: 150px;
+  --header-height: 120px;
 }
 
 body {
@@ -55,12 +55,25 @@ body {
 /* ----------  H E A D E R  ------------*/
 .home-header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding-left: 60px;
+  padding: 0 60px;
   height: var(--header-height);
 }
 .home-header img {
   width: 130px;
+}
+
+.navigation {
+  display: flex;
+}
+.navigation ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.navigation li {
+  margin-right: 30px;
 }
 .shadow {
   position: absolute;
@@ -252,6 +265,7 @@ body {
 }
 .psilocybin {
   bottom: 12vh;
+  height: 14vh !important;
 }
 .thc-down {
   top: -10vh;
