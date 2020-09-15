@@ -1,7 +1,7 @@
 .drug-detail {
   max-width: 1060px;
   margin: auto;
-  padding: 0 40px;
+  padding: 0 60px;
 }
 /* ---------    H E A D E R   ---------- */
 .detail-header {
@@ -10,7 +10,9 @@
 }
 
 .image-main {
-  width: 355px;
+  max-width: 300px;
+  max-height: 300px;
+  width: 100%;
   margin-right: 50px;
   object-fit: contain;
 }
@@ -100,6 +102,7 @@
   font-size: 25px;
   font-family: var(--primary-font);
   font-weight: 800;
+  margin-bottom: 20px;
 }
 .section-heading:before {
   position: absolute;
@@ -180,13 +183,7 @@
   transform: translateY(-50%);
   left: 0;
   border-radius: 4px;
-  background: linear-gradient(
-    to right,
-    lightblue,
-    limegreen,
-    orange,
-    var(--red)
-  );
+  background: linear-gradient(to right, lightblue, limegreen, orange, var(--red));
 }
 
 /* ---------   S A F E T Y - T  I P S  +  R I S K S   S E C T I O N    -----------*/
