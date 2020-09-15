@@ -62,6 +62,17 @@ const renderDetail = (allDrugs) => {
       li.textContent = effect;
       c.querySelector("#side-effects").appendChild(li);
     });
+
+    drug.safetyTips.forEach((tip) => {
+      const li = document.createElement("li");
+      li.textContent = tip;
+      c.querySelector("#safety-tips").appendChild(li);
+    });
+    drug.risks.forEach((risk) => {
+      const li = document.createElement("li");
+      li.textContent = risk;
+      c.querySelector("#risks").appendChild(li);
+    });
     // c.querySelector("#actual-effects").
 
     main.appendChild(c);

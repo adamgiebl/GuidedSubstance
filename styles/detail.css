@@ -113,7 +113,7 @@
   content: "";
   bottom: 1px;
 }
-/* ---------   C O M P A R I S O N   -------*/
+/* ---------   E F F E C T S'   C O M P A R I S O N   -------*/
 .section-effects-comparison {
   margin: 50px 0;
   display: flex;
@@ -154,11 +154,18 @@
 #side-effects li:before {
   background: var(--red);
 }
+
+/* ------------    D O S A G E    S E C T I O N   ------------*/
 .dosage {
+  font-family: var(--secondary-font);
+  font-size: 14px;
+  font-weight: 300;
   position: relative;
   display: inline-block;
 }
 .dosage-columns {
+  margin-bottom: 15px;
+  margin-top: 15px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-items: center;
@@ -166,11 +173,55 @@
 }
 .range {
   position: absolute;
-  background: red;
   width: 100%;
   height: 7px;
   top: 50%;
   transform: translateY(-50%);
   left: 0;
   border-radius: 4px;
+  background: linear-gradient(to right, lightblue, green, orange, red);
+}
+
+/* ---------   S A F E T Y - T  I P S  +  R I S K S   S E C T I O N    -----------*/
+/* Tried section-heading:before and it didn't work. Tried .safety-tips.section-heading.
+ Also section-seading.icon:before. Added different spacing in case the syntax was not
+ correct, but it doesn't work. Googled it and didn't find what I was looking for. Oh,
+ and I also tried satefy-tips > .section-heading:before {display: none}.
+
+.section-heading.safety-icon {
+  background-image: url(./images/safety.svg);
+}*/
+
+.section-safesNrisks {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.safety-list {
+  margin-top: 20px;
+  list-style-type: none;
+}
+.safety-list li {
+  font-family: var(--secondary-font);
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 10px;
+  position: relative;
+  padding: 22px;
+  border-top: 1px solid lightslategray;
+  width: 50%;
+}
+
+.risks-list {
+  list-style-type: none;
+}
+.risks-list li {
+  font-family: var(--secondary-font);
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 10px;
+  position: relative;
+  padding: 22px;
+  border-top: 1px solid lightslategray;
+  width: 50%;
 }
