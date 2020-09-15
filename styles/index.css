@@ -66,10 +66,12 @@ body {
   padding: 0 60px;
   height: var(--header-height);
 }
-.home-header img {
+.home-header .logo {
   width: 130px;
 }
-
+.burger-menu {
+  display: none;
+}
 .navigation {
   display: flex;
 }
@@ -205,6 +207,10 @@ body {
   }
   .navigation {
     display: none;
+  }
+  .burger-menu {
+    display: block;
+    width: 40px;
   }
   .categories {
     grid-template-columns: 1fr;

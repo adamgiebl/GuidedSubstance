@@ -23,7 +23,7 @@
   <body>
     <header class="home-header">
       <hyper-link to="GuidedSubstance">
-        <img src="./images/logo.svg" alt="GuidedSubstance" />
+        <img class="logo" src="./images/logo.svg" alt="GuidedSubstance" />
       </hyper-link>
       <nav class="navigation">
         <ul>
@@ -36,6 +36,11 @@
           <li>Disclaimer</li>
         </ul>
       </nav>
+      <img
+        class="burger-menu"
+        src="./images/burger-menu.svg"
+        alt="burger menu"
+      />
       <div class="shadow"></div>
     </header>
     <main id="content"></main>
@@ -51,17 +56,17 @@
       <main class="drug-detail">
         <header class="detail-header">
           <img class="image-main" src="{imageMain}" alt="{name}" />
+
           <div class="header-container">
+            <div class="meta">
+              <span class="schedule">{schedule}</span>
+              <span class="category">{category}</span>
+            </div>
             <h2>{name}</h2>
             <span class="street-names">{street names}</span>
             <div class="description">
               <p class="description-content">{description}</p>
               <a href="{source}" class="description-link">Read more...</a>
-            </div>
-
-            <div class="meta">
-              <span class="schedule">{schedule}</span>
-              <span class="category">{category}</span>
             </div>
           </div>
         </header>

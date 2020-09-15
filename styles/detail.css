@@ -57,6 +57,7 @@
   font-size: 14px;
   font-weight: 400;
   text-align: right;
+  white-space: nowrap;
 }
 
 .header-container .schedule {
@@ -87,6 +88,33 @@
   color: var(--blue);
 }
 
+@media only screen and (max-width: 1040px) {
+  .detail-header {
+    display: block;
+  }
+  .header-container {
+    margin-top: 30px;
+  }
+  .header-container .meta {
+    position: relative;
+  }
+  .header-container .schedule,
+  .header-container .category {
+    text-align: left;
+    width: max-content;
+  }
+  .header-container .schedule:before {
+    left: 0;
+  }
+  .image-compound {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .header-container h2 {
+    font-size: 56px;
+  }
+}
 /* ---------  E F F E C T S  --------*/
 .section-effects {
   display: flex;
@@ -159,9 +187,16 @@
 #side-effects li:before {
   background: var(--red);
 }
-
+@media only screen and (max-width: 1040px) {
+  .section-effects-comparison {
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+  }
+}
 /* ------------    D O S A G E    S E C T I O N   ------------*/
 .dosage {
+  width: 100%;
+  max-width: 700px;
   font-family: var(--secondary-font);
   font-size: 14px;
   font-weight: 300;
@@ -174,7 +209,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-items: center;
-  width: 700px;
+  width: 100%;
 }
 .range {
   position: absolute;
@@ -236,6 +271,12 @@
 .risks-list li:first-child,
 .safety-list li:first-child {
   border-top: none;
+}
+@media only screen and (max-width: 1040px) {
+  .section-safes-and-risks {
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+  }
 }
 
 .video-container {
