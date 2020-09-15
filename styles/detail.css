@@ -248,3 +248,7 @@ header.safety-list {
 /* a class inside another element of class
 header .safety-list {
 }*/
+nav {
+  display: flex;
+  justify-content: space-between;
+}
