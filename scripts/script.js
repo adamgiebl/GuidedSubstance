@@ -52,6 +52,38 @@ const renderDetail = (allDrugs) => {
     c.querySelector(".schedule").textContent = "Schedule " + drug.schedule;
     c.querySelector(".category").textContent = drug.category;
     c.querySelector("iframe").src = drug.youtube;
+    drug.effects.forEach((effect) => {
+      const li = document.createElement("li");
+      li.textContent = effect;
+      c.querySelector("#actual-effects").appendChild(li);
+    });
+    drug.negativeEffects.forEach((effect) => {
+      const li = document.createElement("li");
+      li.textContent = effect;
+      c.querySelector("#side-effects").appendChild(li);
+    });
+
+    c.querySelector(".threshold-value").textContent =
+      drug.dosage.threshold + drug.dosage.unit;
+    c.querySelector(".light-value").textContent =
+      drug.dosage.light + drug.dosage.unit;
+    c.querySelector(".common-value").textContent =
+      drug.dosage.common + drug.dosage.unit;
+    c.querySelector(".strong-value").textContent =
+      drug.dosage.strong + drug.dosage.unit;
+
+    drug.safetyTips.forEach((tip) => {
+      const li = document.createElement("li");
+      li.textContent = tip;
+      c.querySelector("#safety-tips").appendChild(li);
+    });
+    drug.risks.forEach((risk) => {
+      const li = document.createElement("li");
+      li.textContent = risk;
+      c.querySelector("#risks").appendChild(li);
+    });
+    // c.querySelector("#actual-effects").
+
     main.appendChild(c);
   };
 };
@@ -62,5 +94,5 @@ fetchJson(API_URL).then((data) => {
     Detail: renderDetail(data),
   });
 
-  push("Detail", "LSD");
+  push("Detail", "Marihuana");
 });

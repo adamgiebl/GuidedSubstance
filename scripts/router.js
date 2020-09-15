@@ -27,12 +27,14 @@ export const createRoutes = (config) => {
     document.title = name ? `${id}/${name}` : id;
     clearContent();
     loadContent(id, name);
+    window.scrollTo(0, 0);
     window.history.pushState({ id, name }, `${id}`, ``);
   };
 
   window.addEventListener("popstate", ({ state: { id, name } }) => {
     document.title = name ? `${id}/${name}` : id;
     clearContent();
+    window.scrollTo(0, 0);
     loadContent(id, name);
   });
 

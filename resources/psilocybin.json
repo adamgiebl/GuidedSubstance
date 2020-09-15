@@ -27,7 +27,7 @@
     "test your mushrooms",
     "be in a good mood before use"
   ],
-  "streetNames": ["magic mushrooms", "psychedelic mushrooms", "shrooms"],
+  "streetNames": ["Magic mushrooms", "Psychedelic mushrooms", "Shrooms"],
   "dosage": {
     "unit": "g",
     "threshold": "0.25 - 0.5",

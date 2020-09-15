@@ -12,7 +12,13 @@
     "emotion enhancement - LSD strongly enhances the user's ability to experience emotion",
     "spirituality enhancement, auditory enhancement, existential self-realization, unity and interconnectedness, increased sense of humor and much more..."
   ],
-  "negativeEffects": ["mild nausea", "appetite supression", "time distortion"],
+  "negativeEffects": [
+    "mild nausea",
+    "appetite supression",
+    "time distortion",
+    "dehydration",
+    "paranoia"
+  ],
   "safetyTips": [
     "avoid unfamiliar or hazardous territory (heights/traffic)",
     "stay hydrated",
@@ -32,7 +38,8 @@
   "risks": [
     "psychological trauma",
     "may trigger or exacerbate symptoms (e.g. delusions, mania, psychosis) in those who have or are predisposed to mental illness such as bipolar disorder or schizophrenia",
-    "poisioning due to ingesting different (mimic) substance than LSD such as 25x-NBOMe and DOx"
+    "poisioning due to ingesting different (mimic) substance than LSD such as 25x-NBOMe and DOx",
+    "pshysical harm due to impaired judgement"
   ],
   "imageMain": "lsd.png",
   "imageCompound": "lsd.svg",

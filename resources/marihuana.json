@@ -2,22 +2,15 @@
   "name": "Marihuana",
   "schedule": "1",
   "category": "Cannabis",
-  "description": "Known as Marijuana (dried plant parts) is a preparation of the cannabis plant that produces psychoactive effects when consumed (via smoking, vaporizing, or ingestion). The principal psychoactive constituent of cannabis is tetrahydrocannabinol (THC), which makes up one of 483 known compounds in the plant, including at least 84 other cannabinoids such as cannabidiol (CBD), cannabinol (CBN), tetrahydrocannabivarin (THCV), and cannabigerol (CBG). At least three species are recognized: Cannabis sativa, Cannabis indica, and Cannabis ruderalis.",
+  "description": "Known as Marijuana (dried plant parts) is a preparation of the cannabis plant that produces psychoactive effects when consumed (via smoking, vaporizing, or ingestion). The main psychoactive components of cannabis are tetrahydrocannabinol (THC) and cannabidiol (CBD). At least three species are recognized: Cannabis sativa, Cannabis indica, and Cannabis ruderalis.",
   "source": "https://psychonautwiki.org/wiki/Marihuana",
   "effectsDesc": "When a person smokes marijuana, THC quickly passes from the lungs into the bloodstream. The blood carries the chemical to the brain and other organs throughout the body. The body absorbs THC more slowly when the person eats or drinks it. In that case, they generally feel the effects after 30 minutes to 1 hour.",
   "effects": [
     "spontaneous bodily sensations",
     "appetite enhancement",
-    "changes in felt gravity",
-    "aInternal hallucination"
+    "changes in felt gravity"
   ],
-  "negativeEffects": [
-    "time distortion",
-    "dehydration",
-    "mood disorders",
-    "paranoia",
-    "anxiety"
-  ],
+  "negativeEffects": ["time distortion", "dehydration", "paranoia", "anxiety"],
   "safetyTips": [
     "keep calm and drink plenty of water",
     "move to a safe and relaxing location",
