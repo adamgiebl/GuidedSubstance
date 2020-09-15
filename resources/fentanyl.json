@@ -15,13 +15,10 @@
   "negativeEffects": [
     "drowsiness",
     "nausea",
-    "confusion",
     "constipation",
     "sedation",
     "problems breathing",
-    "unconsciousness",
-    "itchiness",
-    "double vision"
+    "itchiness"
   ],
   "safetyTips": [
     "don't consume with depressants such as opiates, benzodiazepines, barbiturates, gabapentinoids, thienodiazepines, alcohol or other GABAergic substances",
@@ -29,15 +26,13 @@
     "the amount has to be carefully measured before use, never make a rough guess of the weight"
   ],
   "streetNames": [
-    "Apache",
-    "Mandy",
-    "China Girl",
-    "China White",
-    "Friend",
-    "Goodfellas",
-    "Jackpot",
-    "Mur,der 8",
-    "Tango & Cash"
+    "Sublimaze",
+    "Actiq",
+    "Duragesic",
+    "Fentora",
+    "Matrifen",
+    "Haldid",
+    "Onsolis"
   ],
   "dosage": {
     "unit": "μg",
