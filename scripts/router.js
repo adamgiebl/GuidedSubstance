@@ -1,6 +1,5 @@
 class Link extends HTMLElement {
   listener() {
-    console.log(this.getAttribute("to"));
     window.router.routeTo(this.getAttribute("to"), this.getAttribute("item"));
   }
   constructor() {

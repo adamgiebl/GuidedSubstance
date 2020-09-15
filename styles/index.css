@@ -45,6 +45,12 @@ hyper-link {
   --header-height: 120px;
 }
 
+@media only screen and (max-width: 900px) {
+  :root {
+    --header-height: 80px;
+  }
+}
+
 body {
   font-family: var(--secondary-font);
   background: var(--darkblue);
@@ -129,6 +135,26 @@ body {
   object-fit: contain;
 }
 
+@media only screen and (max-width: 500px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+  .hero h3 {
+    font-size: 18px;
+  }
+  .hero {
+    height: 300px;
+    justify-content: center;
+    padding-top: 0;
+  }
+  .hero img {
+    display: none;
+  }
+  .home-header img {
+    width: 100px;
+  }
+}
+
 /*----------  C A T E G O R I E S  ------------*/
 .categories {
   display: grid;
@@ -137,6 +163,7 @@ body {
   margin: auto;
   max-width: 1200px;
 }
+
 .category {
   display: flex;
 }
@@ -172,6 +199,33 @@ body {
   max-width: 129px;
 }
 
+@media only screen and (max-width: 900px) {
+  .home-header {
+    padding: 0 20px;
+  }
+  .navigation {
+    display: none;
+  }
+  .categories {
+    grid-template-columns: 1fr;
+    padding: 0 40px;
+  }
+  .category {
+    display: block;
+  }
+  .category h2 {
+    text-align: initial;
+    overflow-wrap: initial;
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .category h2 {
+    font-size: 30px;
+  }
+}
+
 /*-----------  C A T E G O R Y-C O N T E N T  -------*/
 .category-content p {
   margin-top: 10px;
@@ -186,6 +240,24 @@ body {
   max-width: 200px;
   display: flex;
 }
+
+.tile {
+  position: relative;
+  width: 120px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10px;
+  padding: 20px 20px 15px 20px;
+  background: var(--blueish);
+}
+
+.tile:hover {
+  background: red;
+}
+
 .stimulants .tile {
   background: var(--blueish);
 }
@@ -199,16 +271,17 @@ body {
   background: var(--purpleish);
 }
 
-.tile {
-  position: relative;
-  width: 120px;
-  height: 140px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  margin-right: 10px;
-  padding: 20px 20px 15px 20px;
+.stimulants.tile {
+  background: var(--blueish);
+}
+.psychedelics.tile {
+  background: var(--pinkish);
+}
+.cannabis.tile {
+  background: var(--greenish);
+}
+.opioids.tile {
+  background: var(--purpleish);
 }
 
 .tile img {
@@ -233,7 +306,9 @@ body {
   left: 50%;
   transform: translateX(-50%);
   height: 4px;
+  background: var(--blue);
 }
+
 .stimulants .tile:after {
   background: var(--blue);
 }
@@ -247,6 +322,19 @@ body {
   background: var(--purple);
 }
 
+.stimulants.tile:after {
+  background: var(--blue);
+}
+.psychedelics.tile:after {
+  background: var(--pink);
+}
+.cannabis.tile:after {
+  background: var(--green);
+}
+.opioids.tile:after {
+  background: var(--purple);
+}
+
 .cocaine {
   top: 29vh;
   right: 10vw;
@@ -256,8 +344,9 @@ body {
   right: 15vw;
 }
 .lsd {
-  top: -9vh;
+  top: -2vh;
   right: 32vw;
+  height: 19vh !important;
 }
 
 .mdma {

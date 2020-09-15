@@ -30,7 +30,6 @@ const renderTiles = (allDrugs) => {
 const renderDetail = (allDrugs) => {
   return (name) => {
     const drug = allDrugs.find((drug) => drug.name === name);
-    console.log(drug);
     const t = document.querySelector("#drug-detail").content;
     const c = t.cloneNode(true);
     c.querySelector(".image-main").src = `./images/${drug.imageMain}`;
@@ -42,10 +41,6 @@ const renderDetail = (allDrugs) => {
       drug.source || ""
     );
     c.querySelector(".effects-description").textContent = drug.effectsDesc;
-    console.log(
-      "renderDetail -> c.querySelector('.image-compound')",
-      c.querySelector(".image-compound")
-    );
     c.querySelector(".image-compound").src = `./images/${drug.imageCompound}`;
 
     c.querySelector(".street-names").textContent = drug.streetNames;
@@ -82,9 +77,29 @@ const renderDetail = (allDrugs) => {
       li.textContent = risk;
       c.querySelector("#risks").appendChild(li);
     });
-    // c.querySelector("#actual-effects").
 
     main.appendChild(c);
+  };
+};
+
+const renderAllDrugs = (allDrugs) => {
+  return () => {
+    const allDrugsTemplate = document.querySelector("#all-drugs").content;
+    const allDrugsTemplateClone = allDrugsTemplate.cloneNode(true);
+
+    allDrugs.forEach((drug) => {
+      const tile = document.querySelector("#drug-tile").content;
+      const tileClone = tile.cloneNode(true);
+      tileClone
+        .querySelector(".tile")
+        .classList.add(`${drug.category.toLowerCase()}`);
+      tileClone.querySelector("hyper-link").setAttribute("item", drug.name);
+      tileClone.querySelector("img").src = `./images/${drug.imageMain}`;
+      tileClone.querySelector("h4").textContent = drug.name;
+      allDrugsTemplateClone.appendChild(tileClone);
+    });
+
+    main.appendChild(allDrugsTemplateClone);
   };
 };
 
@@ -92,7 +107,8 @@ fetchJson(API_URL).then((data) => {
   const push = AdamRouter.createRoutes({
     GuidedSubstance: renderTiles(data),
     Detail: renderDetail(data),
+    AllDrugs: renderAllDrugs(data),
   });
 
-  push("Detail", "Marihuana");
+  push("GuidedSubstance");
 });
