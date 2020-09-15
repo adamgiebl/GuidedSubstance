@@ -157,6 +157,7 @@ body {
   grid-gap: 50px;
   margin: auto;
   max-width: 1200px;
+  margin-top: 70px;
 }
 
 .category {

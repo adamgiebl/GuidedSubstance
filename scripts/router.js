@@ -22,19 +22,20 @@ export const createRoutes = (config) => {
     name ? config[id](name) : config[id]();
   };
 
-  const routeTo = (id, name) => {
+  const reRouteChores = (id, name) => {
     document.title = name ? `${id}/${name}` : id;
     clearContent();
     loadContent(id, name);
     window.scrollTo(0, 0);
+  };
+
+  const routeTo = (id, name) => {
+    reRouteChores(id, name);
     window.history.pushState({ id, name }, `${id}`, ``);
   };
 
   window.addEventListener("popstate", ({ state: { id, name } }) => {
-    document.title = name ? `${id}/${name}` : id;
-    clearContent();
-    window.scrollTo(0, 0);
-    loadContent(id, name);
+    reRouteChores(id, name);
   });
 
   window.router = { routeTo };
