@@ -110,5 +110,5 @@ fetchJson(API_URL).then((data) => {
     AllDrugs: renderAllDrugs(data),
   });
 
-  push("Detail", "Marihuana");
+  push("AllDrugs");
 });

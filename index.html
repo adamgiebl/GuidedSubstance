@@ -1,212 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./favicon-16x16.png"
-    />
-    <title>GuidedSubstance</title>
-    <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="stylesheet" href="./styles/detail.css" />
-    <link rel="stylesheet" href="./styles/allDrugs.css" />
-  </head>
-  <body>
-    <header class="home-header">
-      <hyper-link to="GuidedSubstance">
-        <img src="./images/logo.svg" alt="GuidedSubstance" />
-      </hyper-link>
-      <nav class="navigation">
-        <ul>
-          <li>
-            <hyper-link to="GuidedSubstance">Home</hyper-link>
-          </li>
-          <li>Drug categories</li>
-          <li><hyper-link to="AllDrugs">All drugs</hyper-link></li>
-          <li>Get help</li>
-          <li>Disclaimer</li>
-        </ul>
-      </nav>
-      <div class="shadow"></div>
-    </header>
-    <main id="content"></main>
-    <template id="drug-tile">
-      <hyper-link to="Detail" item="{name}">
-        <article class="tile">
-          <img src="{src}" alt="{name}" />
-          <h4>{name}</h4>
-        </article>
-      </hyper-link>
-    </template>
-    <template id="drug-detail">
-      <main class="drug-detail">
-        <header class="detail-header">
-          <img class="image-main" src="{imageMain}" alt="{name}" />
-          <div class="header-container">
-            <h2>{name}</h2>
-            <span class="street-names">{street names}</span>
-            <div class="description">
-              <p class="description-content">{description}</p>
-              <a href="{source}" class="description-link">Read more...</a>
-            </div>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+	<title>GuidedSubstance</title>
+	<link rel="stylesheet" href="./styles/index.css" />
+	<link rel="stylesheet" href="./styles/detail.css" />
+	<link rel="stylesheet" href="./styles/allDrugs.css" />
+</head>
 
-            <div class="meta">
-              <span class="schedule">{schedule}</span>
-              <span class="category">{category}</span>
-            </div>
-          </div>
-        </header>
-        <section class="section-effects">
-          <div class="effects">
-            <h3 class="section-heading">Effects</h3>
-            <p class="effects-description">{effectsDesc}</p>
-          </div>
-          <img class="image-compound" src="{imageCompound}" alt="compound" />
-        </section>
+<body>
+	<header class="home-header">
+		<hyper-link to="GuidedSubstance">
+			<img src="./images/logo.svg" alt="GuidedSubstance" />
+		</hyper-link>
+		<nav class="navigation">
+			<ul>
+				<li>
+					<hyper-link to="GuidedSubstance">Home</hyper-link>
+				</li>
+				<li>Drug categories</li>
+				<li>
+					<hyper-link to="AllDrugs">All drugs</hyper-link>
+				</li>
+				<li>Get help</li>
+				<li>Disclaimer</li>
+			</ul>
+		</nav>
+		<div class="shadow"></div>
+	</header>
+	<main id="content"></main>
+	<template id="drug-tile">
+		<hyper-link to="Detail" item="{name}">
+			<article class="tile">
+				<img src="{src}" alt="{name}" />
+				<h4>{name}</h4>
+			</article>
+		</hyper-link>
+	</template>
+	<template id="drug-detail">
+		<main class="drug-detail">
+			<header class="detail-header">
+				<img class="image-main" src="{imageMain}" alt="{name}" />
+				<div class="header-container">
+					<h2>{name}</h2>
+					<span class="street-names">{street names}</span>
+					<div class="description">
+						<p class="description-content">{description}</p>
+						<a href="{source}" class="description-link">Read more...</a>
+					</div>
 
-        <section class="section-effects-comparison">
-          <div class="actual-effects">
-            <h4>
-              <strong>Effects</strong> may include but are not limited to:
-            </h4>
-            <ul class="effects-list" id="actual-effects"></ul>
-          </div>
-          <div class="side-effects">
-            <h4>
-              <strong>Side-effects</strong> may include but are not limited to:
-            </h4>
-            <ul class="effects-list" id="side-effects"></ul>
-          </div>
-        </section>
-        <section class="section-dosage">
-          <h4 class="section-heading">Dosage</h4>
-          <div class="dosage">
-            <div class="range"></div>
-            <div class="dosage-columns">
-              <div class="dosage-column threshold-value">{threshold}</div>
-              <div class="dosage-column light-value">{light}</div>
-              <div class="dosage-column common-value">{common}</div>
-              <div class="dosage-column strong-value">{strong}</div>
-            </div>
-            <div class="dosage-columns">
-              <div class="dosage-column threshold">threshold</div>
-              <div class="dosage-column light">light</div>
-              <div class="dosage-column common">common</div>
-              <div class="dosage-column strong">strong</div>
-            </div>
-          </div>
-        </section>
-        <section class="section-safes-and-risks">
-          <div class="safety-tips">
-            <h4 class="section-heading safety-icon">Safety Tips</h4>
-            <ul class="safety-list" id="safety-tips"></ul>
-          </div>
-          <div class="risks">
-            <h4 class="section-heading risks-icon">Risks</h4>
-            <ul class="risks-list" id="risks"></ul>
-          </div>
-        </section>
-        <section class="video-section">
-          <h4 class="section-heading">Recommended video</h4>
-          <div class="video-container">
-            <iframe
-              src="{youtube}"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </section>
-      </main>
-    </template>
-    <template id="categories">
-      <section class="hero">
-        <h1>Know about the drugs</h1>
-        <h3>A simple guide to the substances out there</h3>
-        <img class="cocaine" src="./images/cocaine.svg" alt="compound" />
-        <img class="fentanyl" src="./images/fentanyl.svg" alt="compound" />
-        <img class="mdma" src="./images/mdma.svg" alt="compound" />
-        <img class="xanax" src="./images/xanax.svg" alt="compound" />
-        <img class="psilocybin" src="./images/psilocybin.svg" alt="compound" />
-        <img class="thc-down" src="./images/thc.svg" alt="compound" />
-        <img class="thc-up" src="./images/thc.svg" alt="compound" />
-        <img class="lsd" src="./images/lsd.svg" alt="compound" />
-      </section>
-      <section class="categories">
-        <div class="category stimulants">
-          <h2>Stimulants</h2>
-          <div class="category-content">
-            <p>
-              <strong>Stimulants</strong> speed up the body’s nervous system and
-              create a feeling of energy. They are also called “uppers” because
-              of their ability to make you feel very awake. Stimulants have the
-              opposite effect of depressants. When the effects of a stimulant
-              wear off, the user is typically left with feelings of sickness and
-              a loss of energy. Constant use of such drugs can have very
-              negative effects on the user.
-            </p>
-            <div class="drug-tiles" id="stimulants"></div>
-          </div>
-        </div>
-        <div class="category psychedelics">
-          <h2>Psychedelics</h2>
-          <div class="category-content">
-            <p>
-              <strong>Psychedelics</strong> are a hallucinogenic class of
-              psychoactive drug whose primary effect is to trigger non-ordinary
-              states of consciousness and psychedelic experiences via serotonin
-              2A receptor agonism. This causes specific psychological, visual
-              and auditory changes, and often a substantially altered state of
-              consciousness. "Classical" psychedelic drugs include mescaline,
-              LSD, psilocybin, and DMT.
-            </p>
-            <div class="drug-tiles" id="psychedelics"></div>
-          </div>
-        </div>
-        <div class="category cannabis">
-          <h2>Cannabis</h2>
-          <div class="category-content">
-            <p>
-              <strong>Cannabis</strong> can have a variety of psychological and
-              physical effects that vary from person to person. It can make some
-              people tired or relaxed and give others an energy boost and
-              increase alertness. It can also help to treat mental health
-              conditions, such as anxiety and depression, in some people. In
-              others, it can actually cause anxiety over time. As a result,
-              cannabis can be considered a depressant, stimulant, or
-              hallucinogen.
-            </p>
-            <div class="drug-tiles" id="cannabis"></div>
-          </div>
-        </div>
-        <div class="category opioids">
-          <h2>Opioids</h2>
-          <div class="category-content">
-            <p>
-              <strong>Opioids</strong> are a class of drugs naturally found in
-              the opium poppy plant and that work in the brain to produce a
-              variety of effects, including the relief of pain with many of
-              these drugs. Opioids can be prescription medications often
-              referred to as painkillers, or they can be so-called street drugs,
-              such as heroin.
-            </p>
-            <div class="drug-tiles" id="opioids"></div>
-          </div>
-        </div>
-      </section>
-    </template>
-    <template id="all-drugs">
-      <section class="all-drugs">This is where the filters go</section>
-    </template>
-    <script src="./scripts/script.js" type="module"></script>
-  </body>
-</html>
+					<div class="meta">
+						<span class="schedule">{schedule}</span>
+						<span class="category">{category}</span>
+					</div>
+				</div>
+			</header>
+			<section class="section-effects">
+				<div class="effects">
+					<h3 class="section-heading">Effects</h3>
+					<p class="effects-description">{effectsDesc}</p>
+				</div>
+				<img class="image-compound" src="{imageCompound}" alt="compound" />
+			</section>
+
+			<section class="section-effects-comparison">
+				<div class="actual-effects">
+					<h4>
+						<strong>Effects</strong> may include but are not limited to:
+					</h4>
+					<ul class="effects-list" id="actual-effects"></ul>
+				</div>
+				<div class="side-effects">
+					<h4>
+						<strong>Side-effects</strong> may include but are not limited to:
+					</h4>
+					<ul class="effects-list" id="side-effects"></ul>
+				</div>
+			</section>
+			<section class="section-dosage">
+				<h4 class="section-heading">Dosage</h4>
+				<div class="dosage">
+					<div class="range"></div>
+					<div class="dosage-columns">
+						<div class="dosage-column threshold-value">{threshold}</div>
+						<div class="dosage-column light-value">{light}</div>
+						<div class="dosage-column common-value">{common}</div>
+						<div class="dosage-column strong-value">{strong}</div>
+					</div>
+					<div class="dosage-columns">
+						<div class="dosage-column threshold">threshold</div>
+						<div class="dosage-column light">light</div>
+						<div class="dosage-column common">common</div>
+						<div class="dosage-column strong">strong</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-safes-and-risks">
+				<div class="safety-tips">
+					<h4 class="section-heading safety-icon">Safety Tips</h4>
+					<ul class="safety-list" id="safety-tips"></ul>
+				</div>
+				<div class="risks">
+					<h4 class="section-heading risks-icon">Risks</h4>
+					<ul class="risks-list" id="risks"></ul>
+				</div>
+			</section>
+			<section class="video-section">
+				<h4 class="section-heading">Recommended video</h4>
+				<div class="video-container">
+					<iframe src="{youtube}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</section>
+		</main>
+	</template>
+	<template id="categories">
+		<section class="hero">
+			<h1>Know about the drugs</h1>
+			<h3>A simple guide to the substances out there</h3>
+			<img class="cocaine" src="./images/cocaine.svg" alt="compound" />
+			<img class="fentanyl" src="./images/fentanyl.svg" alt="compound" />
+			<img class="mdma" src="./images/mdma.svg" alt="compound" />
+			<img class="xanax" src="./images/xanax.svg" alt="compound" />
+			<img class="psilocybin" src="./images/psilocybin.svg" alt="compound" />
+			<img class="thc-down" src="./images/thc.svg" alt="compound" />
+			<img class="thc-up" src="./images/thc.svg" alt="compound" />
+			<img class="lsd" src="./images/lsd.svg" alt="compound" />
+		</section>
+		<section class="categories">
+			<div class="category stimulants">
+				<h2>Stimulants</h2>
+				<div class="category-content">
+					<p>
+						<strong>Stimulants</strong> speed up the body’s nervous system and
+						create a feeling of energy. They are also called “uppers” because
+						of their ability to make you feel very awake. Stimulants have the
+						opposite effect of depressants. When the effects of a stimulant
+						wear off, the user is typically left with feelings of sickness and
+						a loss of energy. Constant use of such drugs can have very
+						negative effects on the user.
+					</p>
+					<div class="drug-tiles" id="stimulants"></div>
+				</div>
+			</div>
+			<div class="category psychedelics">
+				<h2>Psychedelics</h2>
+				<div class="category-content">
+					<p>
+						<strong>Psychedelics</strong> are a hallucinogenic class of
+						psychoactive drug whose primary effect is to trigger non-ordinary
+						states of consciousness and psychedelic experiences via serotonin
+						2A receptor agonism. This causes specific psychological, visual
+						and auditory changes, and often a substantially altered state of
+						consciousness. "Classical" psychedelic drugs include mescaline,
+						LSD, psilocybin, and DMT.
+					</p>
+					<div class="drug-tiles" id="psychedelics"></div>
+				</div>
+			</div>
+			<div class="category cannabis">
+				<h2>Cannabis</h2>
+				<div class="category-content">
+					<p>
+						<strong>Cannabis</strong> can have a variety of psychological and
+						physical effects that vary from person to person. It can make some
+						people tired or relaxed and give others an energy boost and
+						increase alertness. It can also help to treat mental health
+						conditions, such as anxiety and depression, in some people. In
+						others, it can actually cause anxiety over time. As a result,
+						cannabis can be considered a depressant, stimulant, or
+						hallucinogen.
+					</p>
+					<div class="drug-tiles" id="cannabis"></div>
+				</div>
+			</div>
+			<div class="category opioids">
+				<h2>Opioids</h2>
+				<div class="category-content">
+					<p>
+						<strong>Opioids</strong> are a class of drugs naturally found in
+						the opium poppy plant and that work in the brain to produce a
+						variety of effects, including the relief of pain with many of
+						these drugs. Opioids can be prescription medications often
+						referred to as painkillers, or they can be so-called street drugs,
+						such as heroin.
+					</p>
+					<div class="drug-tiles" id="opioids"></div>
+				</div>
+			</div>
+		</section>
+	</template>
+	<!------ all drugs by Jesus------------->
+	<template id="all-drugs">
+
+		<section class="all-drugs">
+
+			<div class="container1">
+			<h1> Categories </h1>
+
+			<button class="stimulants1" onclick="filterSelection('stimulants')"> Stimulants</button>
+			<button class="Opioids1" onclick="filterSelection('Opioids')"> Opioids </button>
+			<button class="Psychedelics1" onclick="filterSelection('Psychedelics')"> Psychedelics</button>
+			<button class="Cannabis1" onclick="filterSelection('Cannabis')"> Cannabis </button>
+
+			</div>
+			<div class="container2">
+			<h2> Legal Classification </h2>
+			<button class="A" onclick="filterSelection('A')"> A</button>
+			<button class="B" onclick="filterSelection('B')"> B </button>
+			<button class="C" onclick="filterSelection('C')"> C </button>
+
+
+			</div>
+			<div class="container3">
+			<h3> search</h3>
+			<input class="search" type="text" placeholder="Search..">
+			</div>
+		</section>
+
+
+
+
+	</template>
+	<!------ all drugs by Jesus------------->
+	<script src="./scripts/script.js" type="module"></script>
+</body></html>
