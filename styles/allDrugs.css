@@ -14,11 +14,6 @@
   padding: 70px;
 }
 
-.tile1 {
-  font-size: 20px;
-  display: flex;
-}
-
 .filter-category {
   position: relative;
   color: var(--white);
@@ -27,6 +22,7 @@
   cursor: pointer;
   padding: 10px;
   align-items: center;
+  margin-right: 5px;
 }
 
 .filter-category:hover:after {
@@ -45,11 +41,21 @@
   transition: all 0.3s;
 }
 
-.filter {
+.filter-categories input {
+  display: none;
+}
+
+.filter-categories label {
+  display: inline-block;
 }
 
 .filter-classes .classes {
   display: flex;
+}
+.filter-class.bee {
+  cursor: pointer;
+  border: none;
+  background: #00bbf930;
 }
 
 .filter-class {
@@ -65,6 +71,8 @@
 
 .filter-heading {
   margin-bottom: 20px;
+  font-family: var(--secondary-font);
+  font-weight: 300;
 }
 
 .filter-search {
@@ -91,4 +99,32 @@
 
 .filter-search .search::placeholder {
   color: var(--white);
+}
+.filter-category.stimulants:after {
+  background: var(--blue);
+}
+.filter-category.opioids:after {
+  background: var(--purple);
+}
+.filter-category.psychedelics:after {
+  background: var(--pink);
+}
+.filter-category.cannabis:after {
+  background: var(--green);
+}
+
+input#stimulants-cat:checked + label {
+  background: var(--blueish-filter);
+}
+
+input#opioids-cat:checked + label {
+  background: var(--purpleish-filter);
+}
+
+input#cannabis-cat:checked + label {
+  background: var(--greenish-filter);
+}
+
+input#psychedelics-cat:checked + label {
+  background: var(--pinkish-filter);
 }

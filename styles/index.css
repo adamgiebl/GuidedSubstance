@@ -39,6 +39,11 @@ hyper-link {
   --purpleish: #a243ff17;
   --blueish: #00bbf917;
   --redish: #ff1c1c17;
+  --pinkish-filter: #ff006e30;
+  --greenish-filter: #89fc0030;
+  --purpleish-filter: #a243ff30;
+  --blueish-filter: #00bbf930;
+  --redish-filter: #ff1c1c30;
 
   --primary-font: "Maven Pro", sans-serif;
   --secondary-font: "Roboto Slab", sans-serif;
