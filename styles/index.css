@@ -348,21 +348,29 @@ body {
 
 .all-drugs {
 	display: grid;
-	height: 200px;
-	align-content: flex-end;
-	grid-template-columns: auto auto auto;
-	grid-gap: 20px;
+	height: 100px;
+	justify-content: center;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-gap: 10px;
 	background: var(--blueish);
 	padding: 10px;
 	margin: 50px;
 
 }
 
-.container2 {
+/*.container1 {
 	display: inline-block;
-	align-content: center;
-}
+	justify-content: flex-start;
+	align-items: center;
 
+}
+.tile1{
+	display: inline-block;
+	justify-items:center;
+	align-items: center;
+}
+*/
 .stimulants1:hover {
 	background-color: var(--blue);
 	height: 30px;
@@ -375,11 +383,11 @@ body {
 	width: 80px;
 	height: 30px;
 	margin-left: 5px;
-	display: inline-flex;
+
 	border: none;
 	outline: none;
 	cursor: pointer;
-	align-items: center;
+
 	padding: 10px;
 }
 
@@ -406,6 +414,7 @@ body {
 	background-color: var(--pink);
 	height: 30px;
 	width: 80px;
+
 }
 
 .Psychedelics1 {
@@ -443,6 +452,23 @@ body {
 
 
 
+.container2{
+	display: inline-block;
+	grid-template-rows: 1fr 1fr;
+
+}
+.A:hover {
+	border: 1px solid white;
+}
+.A{
+	outline: none;
+	width: 50px;
+	height: 30px;
+	background-color: var(--blueish);
+	color: var(--white);
+	border: none;
+	cursor: pointer;
+}
 
 :root {
 	--darkblue: #011627;
