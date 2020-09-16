@@ -1,18 +1,45 @@
 /* -------------     C H A T   "B U B B L E"     --------*/
+.chat-bubble {
+  overflow: visible;
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+}
+.bubble-image {
+  width: 70px;
+  cursor: pointer;
+}
+
+.chat-bubble.active .chat-container {
+  display: block;
+}
+
 .chat-container {
+  display: none;
   background: var(--darkblue);
   border-radius: 7px;
   border: 1px solid #2196f3;
-  width: 250px;
-  height: 200px;
-  position: fixed;
-  top: 600px;
-  right: 100px;
-  padding: 20px;
+  width: 300px;
+  position: absolute;
+  bottom: 100%;
+  right: 100%;
+  padding: 35px;
   text-align: start;
+  font-family: var(--secondary-font);
+  font-weight: 300;
+  font-size: 14px;
 }
 
-/* ---------   C O N C T A C T   S E C T I O N ----------*/
+.chat-container h3 {
+  margin-bottom: 10px;
+}
+
+.messenger {
+  max-width: 95%;
+  margin-top: 30px;
+}
+
+/* ---------   C O N T A C T   S E C T I O N ----------*/
 .help-section {
   max-width: 1000px;
   margin: auto;
@@ -72,7 +99,7 @@ input[type="submit"] {
   background-color: #2196f3;
   color: white;
   padding: 12px 20px;
-  border: none;
+  border: 1px solid #2699fb;
   cursor: pointer;
 }
 input[type="submit"]:hover {

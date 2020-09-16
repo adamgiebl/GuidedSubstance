@@ -45,6 +45,20 @@
       <div class="shadow"></div>
     </header>
     <main id="content"></main>
+    <div class="chat-bubble" id="chat-bubble">
+      <img
+        id="chat-button"
+        class="bubble-image"
+        src="./images/chat.svg"
+        alt="the actual chat bubble that is a blue stroke with a plus sign inside"
+      />
+      <div class="chat-container">
+        <h3>Contact</h3>
+        <p>If you have any questions please do not hesitate to contact us!</p>
+        <img class="messenger" src="./images/messenger.svg" alt="" />
+      </div>
+    </div>
+
     <template id="drug-tile">
       <hyper-link to="Detail" item="{name}">
         <article class="tile">
@@ -213,14 +227,6 @@
         <img class="thc-down" src="./images/thc.svg" alt="compound" />
         <img class="thc-up" src="./images/thc.svg" alt="compound" />
         <img class="lsd" src="./images/lsd.svg" alt="compound" />
-        <div class="chat-container">
-          <div class="heading-and-desctiption">
-            <h3>Contact</h3>
-            <p>
-              If you have any questions please do not hesitate to contact us!
-            </p>
-          </div>
-        </div>
       </section>
     </template>
     <template id="help">

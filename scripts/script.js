@@ -13,7 +13,6 @@ const renderHomePage = (allDrugs) => {
     renderCategories(allDrugs);
   };
 };
-
 const renderHero = () => {
   const hero = document.querySelector("#hero").content;
   const heroClone = hero.cloneNode(true);
@@ -133,4 +132,10 @@ fetchJson(API_URL).then((data) => {
   });
 
   push("Help");
+});
+
+const chatButton = document.querySelector("#chat-button");
+
+chatButton.addEventListener("click", () => {
+  document.querySelector("#chat-bubble").classList.toggle("active");
 });
