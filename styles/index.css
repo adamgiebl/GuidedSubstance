@@ -347,34 +347,29 @@ body {
 
 
 .all-drugs {
-	display: grid;
+	display: flex;
 	height: 100px;
-	justify-content: center;
+	justify-content:space-between;
+	flex-direction: row;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
-	grid-gap: 10px;
-	background: var(--blueish);
+	grid-gap: 10px;	background: var(--blueish);
 	padding: 10px;
 	margin: 50px;
 
 }
 
-/*.container1 {
-	display: inline-block;
-	justify-content: flex-start;
-	align-items: center;
+
+.tile1 {
+	font-size: 20px;
+	display: flex;
 
 }
-.tile1{
-	display: inline-block;
-	justify-items:center;
-	align-items: center;
-}
-*/
+
 .stimulants1:hover {
 	background-color: var(--blue);
 	height: 30px;
-	width: 90px;
+	width: 80px;
 }
 
 .stimulants1 {
@@ -386,9 +381,12 @@ body {
 
 	border: none;
 	outline: none;
+	border: none;
 	cursor: pointer;
 
 	padding: 10px;
+	align-items:center;
+
 }
 
 
@@ -410,14 +408,15 @@ body {
 	cursor: pointer;
 	align-items: center;
 }
-.Psychedelics1:hover {
+
+.Psychodelics1:hover {
 	background-color: var(--pink);
 	height: 30px;
 	width: 80px;
 
 }
 
-.Psychedelics1 {
+.Psychodelics1 {
 	background-color: transparent;
 	color: var(--white);
 	width: 80px;
@@ -452,15 +451,21 @@ body {
 
 
 
-.container2{
+.container2 {
 	display: inline-block;
-	grid-template-rows: 1fr 1fr;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
 
+}
+.tile2 {
+	font-size: 20px;
 }
 .A:hover {
 	border: 1px solid white;
 }
-.A{
+
+.A {
 	outline: none;
 	width: 50px;
 	height: 30px;
@@ -470,7 +475,55 @@ body {
 	cursor: pointer;
 }
 
-:root {
+.B:hover {
+	border: 1px solid white;
+}
+
+.B {
+	outline: none;
+	width: 50px;
+	height: 30px;
+	background-color: var(--blueish);
+	color: var(--white);
+	border: none;
+	cursor: pointer;
+}
+
+.C:hover {
+	border: 1px solid white;
+}
+
+.C {
+	outline: none;
+	width: 50px;
+	height: 30px;
+	background-color: var(--blueish);
+	color: var(--white);
+	border: none;
+	cursor: pointer;
+}
+.img-search{
+	color: aliceblue;
+
+}
+
+.container3 {
+	align-content: flex;
+	display: inline-block;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	margin-top: 25px;
+
+
+}
+
+.tile3{
+	font-size: 10px;
+	margin-left: 80px;
+}
+
+
+/*:root {
 	--darkblue: #011627;
 	--white: #f7f7ff;
 	--pink: #ff006e;
@@ -490,4 +543,4 @@ body {
 	--secondary-font: "Roboto Slab", sans-serif;
 	--header-height: 120px;
 }
-
+*/
