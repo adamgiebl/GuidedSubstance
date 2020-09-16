@@ -9,13 +9,15 @@ const API_URL =
 
 const renderHomePage = (allDrugs) => {
   return () => {
-    renderHero();
+    renderHero("Know all about drugs", "Impartial view on the world's drugs");
     renderCategories(allDrugs);
   };
 };
-const renderHero = () => {
+const renderHero = (heading, subheading) => {
   const hero = document.querySelector("#hero").content;
   const heroClone = hero.cloneNode(true);
+  heroClone.querySelector("#heading").textContent = heading;
+  heroClone.querySelector("#subheading").textContent = subheading;
   main.appendChild(heroClone);
 };
 
@@ -94,11 +96,12 @@ const renderDetailPage = (allDrugs) => {
 
 const renderHelpPage = (data) => {
   return () => {
-    renderHero();
+    renderHero("Get in touch", "Whatever you want");
     const helpTemplate = document.querySelector("#help").content;
     const helpTemplateClone = helpTemplate.cloneNode(true);
 
     main.appendChild(helpTemplateClone);
+    renderCategories(data);
   };
 };
 
@@ -138,4 +141,16 @@ const chatButton = document.querySelector("#chat-button");
 
 chatButton.addEventListener("click", () => {
   document.querySelector("#chat-bubble").classList.toggle("active");
+});
+
+document.querySelector("#burger-button").addEventListener("click", () => {
+  document.querySelector(".mobile-navigation").classList.add("active");
+});
+
+document.querySelector("#burger-button").addEventListener("click", () => {
+  document.querySelector(".mobile-navigation").classList.add("active");
+});
+
+document.querySelector(".mobile-navigation").addEventListener("click", () => {
+  document.querySelector(".mobile-navigation").classList.remove("active");
 });

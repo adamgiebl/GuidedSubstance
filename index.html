@@ -31,17 +31,30 @@
           <li>
             <hyper-link to="GuidedSubstance">Home</hyper-link>
           </li>
-          <li>Drug categories</li>
+          <li><a href="#categories-scroll">Drug categories</a></li>
           <li><hyper-link to="AllDrugs">All drugs</hyper-link></li>
           <li><hyper-link to="Help">Get help</hyper-link></li>
           <li>Disclaimer</li>
         </ul>
       </nav>
       <img
+        id="burger-button"
         class="burger-menu"
         src="./images/burger-menu.svg"
         alt="burger menu"
       />
+      <div class="mobile-navigation">
+        <button id="close">X</button>
+        <ul>
+          <li>
+            <hyper-link to="GuidedSubstance">Home</hyper-link>
+          </li>
+          <li>Drug categories</li>
+          <li><hyper-link to="AllDrugs">All drugs</hyper-link></li>
+          <li><hyper-link to="Help">Get help</hyper-link></li>
+          <li>Disclaimer</li>
+        </ul>
+      </div>
       <div class="shadow"></div>
     </header>
     <main id="content"></main>
@@ -152,6 +165,7 @@
       </main>
     </template>
     <template id="categories">
+      <h2 class="categories-heading" id="categories-scroll">Categories</h2>
       <section class="categories">
         <div class="category stimulants">
           <h2>Stimulants</h2>
@@ -217,8 +231,8 @@
     </template>
     <template id="hero">
       <section class="hero">
-        <h1>Know about the drugs</h1>
-        <h3>A simple guide to the substances out there</h3>
+        <h1 id="heading">{heading}</h1>
+        <h3 id="subheading">{subheading}</h3>
         <img class="cocaine" src="./images/cocaine.svg" alt="compound" />
         <img class="fentanyl" src="./images/fentanyl.svg" alt="compound" />
         <img class="mdma" src="./images/mdma.svg" alt="compound" />

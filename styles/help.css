@@ -41,8 +41,9 @@
 
 /* ---------   C O N T A C T   S E C T I O N ----------*/
 .help-section {
-  max-width: 1000px;
+  max-width: 1060px;
   margin: auto;
+  padding: 0 60px;
 }
 
 .section-heading {
@@ -108,6 +109,7 @@ input[type="submit"]:hover {
 }
 .hotline {
   margin-top: 40px;
+  margin-bottom: 60px;
 }
 .hotline-text {
   font-family: var(--secondary-font);
