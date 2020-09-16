@@ -349,11 +349,12 @@ body {
 .all-drugs {
 	display: flex;
 	height: 100px;
-	justify-content:space-between;
+	justify-content: space-between;
 	flex-direction: row;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
-	grid-gap: 10px;	background: var(--blueish);
+	grid-gap: 10px;
+	background: var(--blueish);
 	padding: 10px;
 	margin: 50px;
 
@@ -366,13 +367,8 @@ body {
 
 }
 
-.stimulants1:hover {
-	background-color: var(--blue);
-	height: 30px;
-	width: 80px;
-}
-
 .stimulants1 {
+	position: relative;
 	background-color: transparent;
 	color: var(--white);
 	width: 80px;
@@ -381,14 +377,46 @@ body {
 
 	border: none;
 	outline: none;
-	border: none;
+
 	cursor: pointer;
 
 	padding: 10px;
-	align-items:center;
+	align-items: center;
 
 }
 
+.stimulants1:hover {
+	background-color: var(--blue);
+	height: 30px;
+	width: 80px;
+}
+
+
+
+.stimulants1:after {
+	background: var(--blue);
+	content: "";
+	width: 75%;
+	bottom: -2px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 4px;
+
+}
+.Opioids1 {
+	position: relative;
+	background-color: transparent;
+	color: var(--white);
+	width: 80px;
+	height: 30px;
+	margin-left: 5px;
+	display: inline-flex;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	align-items: center;
+}
 
 .Opioids1:hover {
 	background-color: var(--purple);
@@ -396,7 +424,24 @@ body {
 	width: 80px;
 }
 
-.Opioids1 {
+.Opioids1:after {
+	background: var(--purple);
+	content: "";
+	width: 75%;
+	bottom: -2px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 4px;
+
+}
+
+
+
+
+
+.Psychodelics1 {
+	position: relative;
 	background-color: transparent;
 	color: var(--white);
 	width: 80px;
@@ -415,8 +460,22 @@ body {
 	width: 80px;
 
 }
+.Psychodelics1:after {
+	background: var(--red);
+	content: "";
+	width: 75%;
+	bottom: -2px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 4px;
 
-.Psychodelics1 {
+}
+
+
+
+.Cannabis1 {
+	position: relative;
 	background-color: transparent;
 	color: var(--white);
 	width: 80px;
@@ -434,22 +493,17 @@ body {
 	height: 30px;
 	width: 80px;
 }
+.Cannabis1:after {
+	background: var(--green);
+	content: "";
+	width: 75%;
+	bottom: -2px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 4px;
 
-.Cannabis1 {
-	background-color: transparent;
-	color: var(--white);
-	width: 80px;
-	height: 30px;
-	margin-left: 5px;
-	display: inline-flex;
-	border: none;
-	outline: none;
-	cursor: pointer;
-	align-items: center;
 }
-
-
-
 
 .container2 {
 	display: inline-block;
@@ -458,9 +512,12 @@ body {
 	justify-content: space-between;
 
 }
+
 .tile2 {
 	font-size: 20px;
 }
+
+/*<------ lEGAL CLASSIFICATION--------->*/
 .A:hover {
 	border: 1px solid white;
 }
@@ -502,7 +559,8 @@ body {
 	border: none;
 	cursor: pointer;
 }
-.img-search{
+
+.img-search {
 	color: aliceblue;
 
 }
@@ -517,7 +575,7 @@ body {
 
 }
 
-.tile3{
+.tile3 {
 	font-size: 10px;
 	margin-left: 80px;
 }
