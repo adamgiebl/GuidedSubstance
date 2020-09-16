@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/detail.css" />
     <link rel="stylesheet" href="./styles/allDrugs.css" />
+    <link rel="stylesheet" href="./styles/help.css" />
   </head>
   <body>
     <header class="home-header">
@@ -32,7 +33,7 @@
           </li>
           <li>Drug categories</li>
           <li><hyper-link to="AllDrugs">All drugs</hyper-link></li>
-          <li>Get help</li>
+          <li><hyper-link to="Help">Get help</hyper-link></li>
           <li>Disclaimer</li>
         </ul>
       </nav>
@@ -212,6 +213,56 @@
         <img class="thc-down" src="./images/thc.svg" alt="compound" />
         <img class="thc-up" src="./images/thc.svg" alt="compound" />
         <img class="lsd" src="./images/lsd.svg" alt="compound" />
+      </section>
+    </template>
+    <template id="help">
+      <section class="help-section">
+        <div class="contact">
+          <h3 class="section-heading">Contact</h3>
+          <p class="contact-description">
+            Whether you want information about any chemical substances, have
+            suggestions on how we could improve our service, or find yourself in
+            need of help, our team of experts will be happy to help you. Simply
+            write to us using the contact form.
+          </p>
+        </div>
+        <form action="action_page.php">
+          <div class="name-and-email">
+            <div class="input-group">
+              <label for="your-name">Your name</label>
+              <input
+                type="text"
+                id="your-name"
+                name="your-name"
+                placeholder="Your name.."
+              />
+            </div>
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Your email address.."
+              />
+            </div>
+          </div>
+          <label for="subject">Your message</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Your message"
+            style="height: 200px"
+          ></textarea>
+          <input type="submit" value="Send" />
+        </form>
+        <div class="hotline">
+          <h3 class="section-heading">Hotline</h3>
+          <p class="hotline-text">
+            Call +45 9054 6067 <br />
+            Weekdays: 08.00-16.00
+          </p>
+        </div>
       </section>
     </template>
     <template id="all-drugs">

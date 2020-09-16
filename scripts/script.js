@@ -93,6 +93,16 @@ const renderDetailPage = (allDrugs) => {
   };
 };
 
+const renderHelpPage = (data) => {
+  return () => {
+    renderHero();
+    const helpTemplate = document.querySelector("#help").content;
+    const helpTemplateClone = helpTemplate.cloneNode(true);
+
+    main.appendChild(helpTemplateClone);
+  };
+};
+
 const renderAllDrugs = (allDrugs) => {
   return () => {
     const allDrugsTemplate = document.querySelector("#all-drugs").content;
@@ -119,7 +129,8 @@ fetchJson(API_URL).then((data) => {
     GuidedSubstance: renderHomePage(data),
     Detail: renderDetailPage(data),
     AllDrugs: renderAllDrugs(data),
+    Help: renderHelpPage(data),
   });
 
-  push("Detail", "Mushrooms");
+  push("Help");
 });

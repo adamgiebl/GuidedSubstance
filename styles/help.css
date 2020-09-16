@@ -1,33 +1,75 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;700&display=swap");
+/* ---------   C O N C T A C T   S E C T I O N ----------*/
 
-@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700;900&family=Roboto:wght@300;500;700&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.help-section {
+  max-width: 1000px;
+  margin: auto;
 }
 
-hyper-link {
+.section-heading {
+  position: relative;
+  font-size: 25px;
+  font-family: var(--primary-font);
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+.section-heading:before {
+  position: absolute;
+  background-image: url(../images/charm.svg);
+  background-size: contain;
   display: inline-block;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  content: "";
+  bottom: 1px;
+}
+.contact-description {
+  font-size: 18px;
+  line-height: 1.2em;
+  display: block;
+  color: var(--white);
+  font-family: var(--secondary-font);
+  font-weight: 300;
+  max-width: 1000px;
+}
+form {
+  margin-top: 40px;
+  font-family: var(--secondary-font);
+  font-weight: 300;
+}
+
+.name-and-email {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 60px;
+}
+input[type="text"],
+textarea {
+  background: transparent;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #2699fb;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type="submit"] {
+  width: 150px;
+  background-color: #2196f3;
+  color: white;
+  padding: 12px 20px;
+  border: none;
   cursor: pointer;
 }
-
-:root {
-  --darkblue: #011627;
-  --white: #f7f7ff;
-  --pink: #ff006e;
-  --green: #89fc00;
-  --purple: #a243ff;
-  --blue: #00bbf9;
-  --red: #ff1c1c;
-  --pinkish: #ff006e17;
-  --greenish: #89fc0017;
-  --purpleish: #a243ff17;
-  --blueish: #00bbf917;
-  --redish: #ff1c1c17;
-
-  --primary-font: "Maven Pro", sans-serif;
-  --secondary-font: "Roboto Slab", sans-serif;
-  --header-height: 120px;
+input[type="submit"]:hover {
+  background: transparent;
+  border: 1px solid #2699fb;
+}
+.hotline {
+  margin-top: 40px;
+}
+.hotline-text {
+  font-family: var(--secondary-font);
+  font-weight: 300;
 }
