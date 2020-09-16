@@ -119,7 +119,9 @@ const renderAllDrugs = (allDrugs) => {
       tileClone.querySelector("hyper-link").setAttribute("item", drug.name);
       tileClone.querySelector("img").src = `./images/${drug.imageMain}`;
       tileClone.querySelector("h4").textContent = drug.name;
-      allDrugsTemplateClone.appendChild(tileClone);
+      allDrugsTemplateClone
+        .querySelector(".drugs-container")
+        .appendChild(tileClone);
     });
 
     main.appendChild(allDrugsTemplateClone);
@@ -134,7 +136,7 @@ fetchJson(API_URL).then((data) => {
     Help: renderHelpPage(data),
   });
 
-  push("Help");
+  push("AllDrugs");
 });
 
 const chatButton = document.querySelector("#chat-button");

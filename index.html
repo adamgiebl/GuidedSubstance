@@ -294,7 +294,36 @@
       </section>
     </template>
     <template id="all-drugs">
-      <section class="all-drugs">This is where the filters go</section>
+      <section class="all-drugs">
+        <div class="filters">
+          <div class="filter filter-categories">
+            <h3 class="filter-heading">Categories</h3>
+            <button class="filter-category">Stimulants</button>
+            <button class="filter-category">Opioids</button>
+            <button class="filter-category">Psychedelics</button>
+            <button class="filter-category">Cannabis</button>
+          </div>
+          <div class="filter filter-classes">
+            <h3 class="filter-heading">Legal Classification</h3>
+            <div class="classes">
+              <button class="filter-class" onclick="filterSelection('A')">
+                A
+              </button>
+              <button class="filter-class" onclick="filterSelection('B')">
+                B
+              </button>
+              <button class="filter-class" onclick="filterSelection('C')">
+                C
+              </button>
+            </div>
+          </div>
+          <div class="filter filter-search">
+            <input class="search" type="search" placeholder="Search..." />
+            <img class="img-search" src="images/search_104498.svg" />
+          </div>
+        </div>
+        <div class="drugs-container"></div>
+      </section>
     </template>
     <script src="./scripts/script.js" type="module"></script>
   </body>

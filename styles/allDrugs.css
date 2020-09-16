@@ -1,0 +1,94 @@
+.all-drugs {
+  padding: 10px;
+  margin: 50px;
+  max-width: 1060px;
+  margin: auto;
+  padding: 0 60px;
+}
+.filters {
+  background: var(--blueish);
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 70px;
+}
+
+.tile1 {
+  font-size: 20px;
+  display: flex;
+}
+
+.filter-category {
+  position: relative;
+  color: var(--white);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  align-items: center;
+}
+
+.filter-category:hover:after {
+  height: 7px;
+}
+
+.filter-category:after {
+  position: absolute;
+  background: var(--blue);
+  content: "";
+  width: 100%;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  transition: all 0.3s;
+}
+
+.filter {
+}
+
+.filter-classes .classes {
+  display: flex;
+}
+
+.filter-class {
+  margin-right: 15px;
+  background: transparent;
+  width: 40px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+
+.filter-heading {
+  margin-bottom: 20px;
+}
+
+.filter-search {
+  position: relative;
+}
+
+.img-search {
+  filter: invert(1);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  pointer-events: none;
+}
+
+.filter-search .search {
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid var(--white);
+  color: var(--white);
+  background: transparent;
+  padding: 5px 15px;
+}
+
+.filter-search .search::placeholder {
+  color: var(--white);
+}
