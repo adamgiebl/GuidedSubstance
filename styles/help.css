@@ -1,5 +1,18 @@
-/* ---------   C O N C T A C T   S E C T I O N ----------*/
+/* -------------     C H A T   "B U B B L E"     --------*/
+.chat-container {
+  background: var(--darkblue);
+  border-radius: 7px;
+  border: 1px solid #2196f3;
+  width: 250px;
+  height: 200px;
+  position: fixed;
+  top: 600px;
+  right: 100px;
+  padding: 20px;
+  text-align: start;
+}
 
+/* ---------   C O N C T A C T   S E C T I O N ----------*/
 .help-section {
   max-width: 1000px;
   margin: auto;
