@@ -464,7 +464,7 @@ a {
 .age-gate {
   position: fixed;
   z-index: 1000;
-  background-image: url(../images/landing.png);
+  background-image: url(../images/gate.png);
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
