@@ -164,7 +164,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 250px;
+  padding-top: 220px;
   position: relative;
 }
 .hero h1 {
@@ -224,6 +224,7 @@ html {
   grid-gap: 50px;
   margin: auto;
   max-width: 1200px;
+  padding: 0 15px;
   padding-top: 40px;
 }
 
@@ -292,6 +293,9 @@ html {
     font-size: 40px;
     margin-bottom: 15px;
   }
+  .categories-heading {
+    margin-bottom: 40px;
+  }
 }
 @media only screen and (max-width: 500px) {
   .category h2 {
@@ -327,8 +331,17 @@ html {
   background: var(--blueish);
 }
 
-.tile:hover {
-  background: red;
+.stimulants .tile:hover {
+  background: var(--blueish-filter);
+}
+.psychedelics .tile:hover {
+  background: var(--pinkish-filter);
+}
+.cannabis .tile:hover {
+  background: var(--greenish-filter);
+}
+.opioids .tile:hover {
+  background: var(--purpleish-filter);
 }
 
 .stimulants .tile {

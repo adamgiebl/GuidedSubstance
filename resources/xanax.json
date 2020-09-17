@@ -1,0 +1,43 @@
+{
+  "name": "Alprazolam/Xanax",
+  "schedule": "C",
+  "category": "Opioids",
+  "description": "Alprazolam is mostly used in short term management of anxiety disorders, panic disorders, and nausea due to chemotherapy",
+
+  "source": "https://psychonautwiki.org/wiki/Xanax",
+
+  "effectsDesc": "Like other benzodiazepines, alprazolam binds to specific sites on the GABAA receptor. It is commonly used for the medical treatment of panic disorder, generalized anxiety disorder (GAD), or social anxiety disorder (SAD).",
+  "effects": [
+    "anxiety suppression, sedation, disinhibition, and muscle relaxation",
+    "sedative effect ",
+    "restless and aggressive"
+  ],
+  "negativeEffects": [
+    "confusion at heavy doses",
+    "aggression, increased anxiety, violent behavior, loss of impulse control, irritability and suicidal behavior ",
+    "Alprazolam is extremely physically and psychologically addictive"
+  ],
+  "safetyTips": [
+    "avoid mix with other stimulants",
+    "if panic:Try to reassure the person and tell them you want to help."
+  ],
+  "streetNames": ["Xannies", "ROHYPNOL", "Benzos", "TABS", "BZD"],
+  "dosage": {
+    "unit": "mg",
+    "threshold": " 0.10",
+    "light": "0.25 - 0.5",
+    "common": "0.5 - 1.5",
+    "strong": "1.5 - 2"
+  },
+  "risks": [
+    "Fatigue and sleep difficulty",
+    "Mental confusion",
+    "Respiratory depression",
+    "Coma"
+  ],
+  "images": {
+    "main": "xanax.png",
+    "compound": "xanax.svg"
+  },
+  "youtube": "https://www.youtube.com/watch?v=6OppVf9Ty-E"
+}
