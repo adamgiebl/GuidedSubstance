@@ -97,6 +97,12 @@ html {
   font-size: 16px;
 }
 
+.navigation ul li.disabled,
+.mobile-navigation ul li.disabled {
+  color: grey;
+  pointer-events: none;
+}
+
 .navigation li {
   margin-right: 30px;
 }
