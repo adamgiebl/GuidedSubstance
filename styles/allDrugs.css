@@ -5,6 +5,10 @@
   margin: auto;
   padding: 0 60px;
 }
+
+.all-drugs .tile {
+  margin-bottom: 20px;
+}
 .filters {
   background: var(--blueish);
   margin-bottom: 100px;
