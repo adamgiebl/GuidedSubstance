@@ -10,7 +10,7 @@ const API_URL =
 const renderHomePage = (allDrugs) => {
   return () => {
     renderHero("Know all about drugs", "Impartial view on the world's drugs");
-    renderCategories(allDrugs);
+    renderCategories(allDrugs)();
   };
 };
 const renderHero = (heading, subheading) => {
@@ -70,27 +70,29 @@ const renderDetail = (drug) => {
 };
 
 const renderCategories = (allDrugs) => {
-  const categories = document.querySelector("#categories").content;
-  const categoriesClone = categories.cloneNode(true);
+  return () => {
+    const categories = document.querySelector("#categories").content;
+    const categoriesClone = categories.cloneNode(true);
 
-  allDrugs.forEach((drug) => {
-    const tile = document.querySelector("#drug-tile").content;
-    const tileClone = tile.cloneNode(true);
-    tileClone.querySelector("hyper-link").setAttribute("item", drug.name);
-    tileClone.querySelector("img").src = `./images/${drug.imageMain}`;
-    tileClone.querySelector("h4").textContent = drug.name;
-    categoriesClone
-      .querySelector(`#${drug.category.toLowerCase()}`)
-      .appendChild(tileClone);
-  });
-  main.appendChild(categoriesClone);
+    allDrugs.forEach((drug) => {
+      const tile = document.querySelector("#drug-tile").content;
+      const tileClone = tile.cloneNode(true);
+      tileClone.querySelector("hyper-link").setAttribute("item", drug.name);
+      tileClone.querySelector("img").src = `./images/${drug.imageMain}`;
+      tileClone.querySelector("h4").textContent = drug.name;
+      categoriesClone
+        .querySelector(`#${drug.category.toLowerCase()}`)
+        .appendChild(tileClone);
+    });
+    main.appendChild(categoriesClone);
+  };
 };
 
 const renderDetailPage = (allDrugs) => {
   return (name) => {
     const drug = allDrugs.find((drug) => drug.name === name);
     renderDetail(drug);
-    renderCategories(allDrugs);
+    renderCategories(allDrugs)();
   };
 };
 
@@ -101,8 +103,18 @@ const renderHelpPage = (data) => {
     const helpTemplateClone = helpTemplate.cloneNode(true);
 
     main.appendChild(helpTemplateClone);
-    renderCategories(data);
   };
+};
+
+const filterBy = (category) => {
+  document.querySelectorAll(`hyper-link[data-category]`).forEach((item) => {
+    item.classList.add("hidden");
+  });
+  document
+    .querySelectorAll(`hyper-link[data-category="${category}"]`)
+    .forEach((item) => {
+      item.classList.remove("hidden");
+    });
 };
 
 const renderAllDrugs = (allDrugs) => {
@@ -117,12 +129,23 @@ const renderAllDrugs = (allDrugs) => {
         .querySelector(".tile")
         .classList.add(`${drug.category.toLowerCase()}`);
       tileClone.querySelector("hyper-link").setAttribute("item", drug.name);
+      tileClone
+        .querySelector("hyper-link")
+        .setAttribute("data-category", drug.category.toLowerCase());
       tileClone.querySelector("img").src = `./images/${drug.imageMain}`;
       tileClone.querySelector("h4").textContent = drug.name;
       allDrugsTemplateClone
         .querySelector(".drugs-container")
         .appendChild(tileClone);
     });
+
+    allDrugsTemplateClone
+      .querySelectorAll("input[name=category]")
+      .forEach((input) => {
+        input.addEventListener("click", () => {
+          filterBy(input.dataset.category);
+        });
+      });
 
     main.appendChild(allDrugsTemplateClone);
   };
@@ -134,9 +157,10 @@ fetchJson(API_URL).then((data) => {
     Detail: renderDetailPage(data),
     AllDrugs: renderAllDrugs(data),
     Help: renderHelpPage(data),
+    Categories: renderCategories(data),
   });
 
-  push("AllDrugs");
+  push("GuidedSubstance");
 });
 
 const chatButton = document.querySelector("#chat-button");

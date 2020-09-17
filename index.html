@@ -31,10 +31,10 @@
           <li>
             <hyper-link to="GuidedSubstance">Home</hyper-link>
           </li>
-          <li><a href="#categories-scroll">Drug categories</a></li>
+          <li><hyper-link to="Categories">Drug categories</hyper-link></li>
           <li><hyper-link to="AllDrugs">All drugs</hyper-link></li>
           <li><hyper-link to="Help">Get help</hyper-link></li>
-          <li>Disclaimer</li>
+          <li class="disabled">Disclaimer</li>
         </ul>
       </nav>
       <img
@@ -49,10 +49,10 @@
           <li>
             <hyper-link to="GuidedSubstance">Home</hyper-link>
           </li>
-          <li>Drug categories</li>
+          <li><hyper-link to="Categories">Drug categories</hyper-link></li>
           <li><hyper-link to="AllDrugs">All drugs</hyper-link></li>
           <li><hyper-link to="Help">Get help</hyper-link></li>
-          <li>Disclaimer</li>
+          <li class="disabled">Disclaimer</li>
         </ul>
       </div>
       <div class="shadow"></div>
@@ -305,19 +305,39 @@
         <div class="filters">
           <div class="filter filter-categories">
             <h3 class="filter-heading">Categories</h3>
-            <input type="radio" name="category" id="stimulants-cat" />
+            <input
+              type="radio"
+              name="category"
+              id="stimulants-cat"
+              data-category="stimulants"
+            />
             <label for="stimulants-cat" class="filter-category stimulants"
               >Stimulants</label
             >
-            <input type="radio" name="category" id="opioids-cat" />
+            <input
+              type="radio"
+              name="category"
+              id="opioids-cat"
+              data-category="opioids"
+            />
             <label for="opioids-cat" class="filter-category opioids"
               >Opioids</label
             >
-            <input type="radio" name="category" id="psychedelics-cat" />
+            <input
+              type="radio"
+              name="category"
+              id="psychedelics-cat"
+              data-category="psychedelics"
+            />
             <label for="psychedelics-cat" class="filter-category psychedelics"
               >Psychedelics</label
             >
-            <input type="radio" name="category" id="cannabis-cat" />
+            <input
+              type="radio"
+              name="category"
+              id="cannabis-cat"
+              data-category="cannabis"
+            />
             <label for="cannabis-cat" class="filter-category cannabis"
               >Cannabis</label
             >
