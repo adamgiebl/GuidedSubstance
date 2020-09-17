@@ -4,6 +4,7 @@
   position: fixed;
   bottom: 100px;
   right: 100px;
+  z-index: 100000;
 }
 .bubble-image {
   width: 70px;
