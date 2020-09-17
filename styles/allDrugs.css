@@ -95,6 +95,7 @@
   color: var(--white);
   background: transparent;
   padding: 5px 15px;
+  width: 100%;
 }
 
 .filter-search .search::placeholder {
@@ -127,4 +128,12 @@ input#cannabis-cat:checked + label {
 
 input#psychedelics-cat:checked + label {
   background: var(--pinkish-filter);
+}
+
+@media only screen and (max-width: 950px) {
+  .filters {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+  }
 }
