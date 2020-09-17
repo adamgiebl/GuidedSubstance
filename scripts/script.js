@@ -98,7 +98,10 @@ const renderDetailPage = (allDrugs) => {
 
 const renderHelpPage = (data) => {
   return () => {
-    renderHero("Get in touch", "Whatever you want");
+    renderHero(
+      "Get in touch",
+      "Our team is ready to help you with any drug related questions or problems"
+    );
     const helpTemplate = document.querySelector("#help").content;
     const helpTemplateClone = helpTemplate.cloneNode(true);
 
@@ -163,7 +166,7 @@ const renderAllDrugs = (allDrugs) => {
 
     allDrugsTemplateClone
       .querySelector("#search-box")
-      .addEventListener("keydown", (e) => {
+      .addEventListener("keyup", (e) => {
         console.log(e.target.value);
         searchBy(e.target.value);
       });
