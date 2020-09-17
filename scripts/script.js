@@ -9,7 +9,7 @@ const API_URL =
 
 const renderHomePage = (allDrugs) => {
   return () => {
-    renderHero("Know all about drugs", "Impartial view on the world's drugs");
+    renderHero("Guided substance", "A simple guide to the world's drugs");
     renderCategories(allDrugs)();
   };
 };
@@ -200,4 +200,17 @@ document.querySelector("#burger-button").addEventListener("click", () => {
 
 document.querySelector(".mobile-navigation").addEventListener("click", () => {
   document.querySelector(".mobile-navigation").classList.remove("active");
+});
+
+document.querySelector("#enter").addEventListener("click", () => {
+  document.querySelector(".age-gate").classList.add("rollUp");
+  window.scrollTo(0, 0);
+  localStorage.setItem("entered", true);
+  setTimeout(() => {
+    document.querySelector(".age-gate").classList.add("hidden");
+  }, 1000);
+});
+
+document.querySelector("#leave").addEventListener("click", () => {
+  window.history.back();
 });

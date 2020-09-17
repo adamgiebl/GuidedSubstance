@@ -42,6 +42,7 @@
 
 .bubble-image-filled {
   display: none;
+  cursor: pointer;
 }
 .hero .bg-mobile {
   display: none;

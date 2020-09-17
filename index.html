@@ -34,7 +34,7 @@
           <li><hyper-link to="Categories">Drug categories</hyper-link></li>
           <li><hyper-link to="AllDrugs">All drugs</hyper-link></li>
           <li><hyper-link to="Help">Get help</hyper-link></li>
-          <li class="disabled">Disclaimer</li>
+          <li class="disabled">About</li>
         </ul>
       </nav>
       <img
@@ -52,11 +52,17 @@
           <li><hyper-link to="Categories">Drug categories</hyper-link></li>
           <li><hyper-link to="AllDrugs">All drugs</hyper-link></li>
           <li><hyper-link to="Help">Get help</hyper-link></li>
-          <li class="disabled">Disclaimer</li>
+          <li class="disabled">About</li>
         </ul>
       </div>
       <div class="shadow"></div>
     </header>
+    <section class="age-gate">
+      <div class="buttons">
+        <button class="primary" id="enter">Enter (15+)</button>
+        <button class="secondary" id="leave">Leave</button>
+      </div>
+    </section>
     <main id="content"></main>
     <div class="chat-bubble" id="chat-bubble">
       <img
@@ -359,6 +365,11 @@
         <div class="drugs-container"></div>
       </section>
     </template>
+    <script>
+      if (localStorage.getItem("entered")) {
+        document.querySelector(".age-gate").classList.add("hidden");
+      }
+    </script>
     <script src="./scripts/script.js" type="module"></script>
   </body>
 </html>

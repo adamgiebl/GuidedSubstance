@@ -45,3 +45,31 @@
   "imageCompound": "lsd.svg",
   "youtube": "https://www.youtube.com/embed/bHOVZ_Tb3ik"
 }
+
+
+{
+  "name": "LSD",
+  "schedule": "B",
+  "category": "Psychedelics",
+  "description": "",
+  "source": "https://psychonautwiki.org/wiki/Lsd",
+  "effectsDesc": "",
+  "effects": [],
+  "negativeEffects": [],
+  "safetyTips": [],
+  "streetNames": ["LSD-25", "Lucy", "L", "Acid", "Cid", "Tabs", "Blotter"],
+  "dosage": {
+    "unit": "µg",
+    "threshold": "15",
+    "light": "25 - 75",
+    "common": "75 - 150",
+    "strong": "150 - 300"
+  },
+  "risks": [],
+  "imageMain": "lsd.png",
+  "imageCompound": "lsd.svg",
+  "youtube": "https://www.youtube.com/embed/bHOVZ_Tb3ik"
+}
+
+
+
