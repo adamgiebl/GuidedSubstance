@@ -163,7 +163,7 @@ fetchJson(API_URL).then((data) => {
   push("GuidedSubstance");
 });
 
-const chatButton = document.querySelector("#chat-button");
+const chatButton = document.querySelector("#chat-bubble");
 
 chatButton.addEventListener("click", () => {
   document.querySelector("#chat-bubble").classList.toggle("active");

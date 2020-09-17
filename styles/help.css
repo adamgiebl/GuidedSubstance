@@ -15,6 +15,7 @@
 }
 
 .chat-container {
+  cursor: pointer;
   display: none;
   background: var(--darkblue);
   border-radius: 7px;
@@ -39,6 +40,47 @@
   margin-top: 30px;
 }
 
+.bubble-image-filled {
+  display: none;
+}
+
+@media only screen and (max-width: 950px) {
+  .filters {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+  }
+  .bubble-image {
+    display: none;
+  }
+  .bubble-image-filled {
+    display: block;
+  }
+  .chat-bubble {
+    bottom: 50px;
+    right: 50px;
+  }
+  .hero img {
+    display: none;
+  }
+  .hero .bg-mobile {
+    display: block;
+    position: absolute;
+    width: 100%;
+    he
+  }
+}
+
+@media only screen and (max-width: 700px) {
+.hero {
+  height: 535px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 140px;
+  position: relative;
+}
+}
 /* ---------   C O N T A C T   S E C T I O N ----------*/
 .help-section {
   max-width: 1060px;
