@@ -39,6 +39,28 @@
   margin-top: 30px;
 }
 
+.bubble-image-filled {
+  display: none;
+}
+
+@media only screen and (max-width: 950px) {
+  .filters {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+  }
+  .bubble-image {
+    display: none;
+  }
+  .bubble-image-filled {
+    display: block;
+  }
+  .chat-bubble {
+    bottom: 50px;
+    right: 50px;
+  }
+}
+
 /* ---------   C O N T A C T   S E C T I O N ----------*/
 .help-section {
   max-width: 1060px;
