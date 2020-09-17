@@ -65,6 +65,9 @@
         src="./images/chat.svg"
         alt="the actual chat bubble that is a blue stroke with a plus sign inside"
       />
+      <div class="chat-bubble-filled" id="chat-bubble-filled">
+        <img src="./images/chat-filled.svg" alt="" />
+      </div>
       <div class="chat-container">
         <h3>Contact</h3>
         <p>If you have any questions please do not hesitate to contact us!</p>
@@ -298,23 +301,49 @@
         <div class="filters">
           <div class="filter filter-categories">
             <h3 class="filter-heading">Categories</h3>
-            <button class="filter-category">Stimulants</button>
-            <button class="filter-category">Opioids</button>
-            <button class="filter-category">Psychedelics</button>
-            <button class="filter-category">Cannabis</button>
+            <input
+              type="radio"
+              name="category"
+              id="stimulants-cat"
+              data-category="stimulants"
+            />
+            <label for="stimulants-cat" class="filter-category stimulants"
+              >Stimulants</label
+            >
+            <input
+              type="radio"
+              name="category"
+              id="opioids-cat"
+              data-category="opioids"
+            />
+            <label for="opioids-cat" class="filter-category opioids"
+              >Opioids</label
+            >
+            <input
+              type="radio"
+              name="category"
+              id="psychedelics-cat"
+              data-category="psychedelics"
+            />
+            <label for="psychedelics-cat" class="filter-category psychedelics"
+              >Psychedelics</label
+            >
+            <input
+              type="radio"
+              name="category"
+              id="cannabis-cat"
+              data-category="cannabis"
+            />
+            <label for="cannabis-cat" class="filter-category cannabis"
+              >Cannabis</label
+            >
           </div>
           <div class="filter filter-classes">
             <h3 class="filter-heading">Legal Classification</h3>
             <div class="classes">
-              <button class="filter-class" onclick="filterSelection('A')">
-                A
-              </button>
-              <button class="filter-class" onclick="filterSelection('B')">
-                B
-              </button>
-              <button class="filter-class" onclick="filterSelection('C')">
-                C
-              </button>
+              <button class="filter-class a">A</button>
+              <button class="filter-class bee">B</button>
+              <button class="filter-class c">C</button>
             </div>
           </div>
           <div class="filter filter-search">

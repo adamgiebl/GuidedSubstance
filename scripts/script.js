@@ -106,6 +106,17 @@ const renderHelpPage = (data) => {
   };
 };
 
+const filterBy = (category) => {
+  document.querySelectorAll(`hyper-link[data-category]`).forEach((item) => {
+    item.classList.add("hidden");
+  });
+  document
+    .querySelectorAll(`hyper-link[data-category="${category}"]`)
+    .forEach((item) => {
+      item.classList.remove("hidden");
+    });
+};
+
 const renderAllDrugs = (allDrugs) => {
   return () => {
     const allDrugsTemplate = document.querySelector("#all-drugs").content;
@@ -118,12 +129,23 @@ const renderAllDrugs = (allDrugs) => {
         .querySelector(".tile")
         .classList.add(`${drug.category.toLowerCase()}`);
       tileClone.querySelector("hyper-link").setAttribute("item", drug.name);
+      tileClone
+        .querySelector("hyper-link")
+        .setAttribute("data-category", drug.category.toLowerCase());
       tileClone.querySelector("img").src = `./images/${drug.imageMain}`;
       tileClone.querySelector("h4").textContent = drug.name;
       allDrugsTemplateClone
         .querySelector(".drugs-container")
         .appendChild(tileClone);
     });
+
+    allDrugsTemplateClone
+      .querySelectorAll("input[name=category]")
+      .forEach((input) => {
+        input.addEventListener("click", () => {
+          filterBy(input.dataset.category);
+        });
+      });
 
     main.appendChild(allDrugsTemplateClone);
   };
