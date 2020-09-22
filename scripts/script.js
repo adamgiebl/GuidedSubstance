@@ -204,7 +204,7 @@ document.querySelector("#burger-button").addEventListener("click", () => {
 document.querySelector(".mobile-navigation").addEventListener("click", () => {
   document.querySelector(".mobile-navigation").classList.remove("active");
 });
-
+/* AGE GATE
 document.querySelector("#enter").addEventListener("click", () => {
   document.querySelector(".age-gate").classList.add("rollUp");
   window.scrollTo(0, 0);
@@ -216,4 +216,4 @@ document.querySelector("#enter").addEventListener("click", () => {
 
 document.querySelector("#leave").addEventListener("click", () => {
   window.history.back();
-});
+});*/

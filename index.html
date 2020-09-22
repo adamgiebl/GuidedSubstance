@@ -57,12 +57,6 @@
       </div>
       <div class="shadow"></div>
     </header>
-    <section class="age-gate">
-      <div class="buttons">
-        <button class="primary" id="enter">Enter (15+)</button>
-        <button class="secondary" id="leave">Leave</button>
-      </div>
-    </section>
     <main id="content"></main>
     <div class="chat-bubble" id="chat-bubble">
       <img
@@ -366,9 +360,10 @@
       </section>
     </template>
     <script>
+      /* AGE GATE
       if (localStorage.getItem("entered")) {
         document.querySelector(".age-gate").classList.add("hidden");
-      }
+      }*/
     </script>
     <script src="./scripts/script.js" type="module"></script>
   </body>

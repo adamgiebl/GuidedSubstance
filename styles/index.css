@@ -461,6 +461,7 @@ a {
   right: 20vw;
 }
 
+/* AGE GATE
 .age-gate {
   position: fixed;
   z-index: 1000;
@@ -514,4 +515,4 @@ a {
 
 .rollUp {
   transform: translateY(-100vh);
-}
+}*/
