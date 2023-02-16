@@ -175,7 +175,7 @@ const renderAllDrugs = (allDrugs) => {
   };
 };
 
-fetchJson(API_URL).then((data) => {
+fetchJson("/resources/guidedSubstanceData.json").then((data) => {
   const push = AdamRouter.createRoutes({
     GuidedSubstance: renderHomePage(data),
     Detail: renderDetailPage(data),

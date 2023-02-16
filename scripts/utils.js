@@ -1,9 +1,9 @@
 const fetchJson = async (url) => {
   const response = await fetch(url);
-  const {
-    feed: { entry: allDrugs },
-  } = await response.json();
-  return allDrugs.map((drug) => JSON.parse(drug.gsx$json.$t));
+  console.log(response);
+  const allDrugs = await response.json();
+  console.log(allDrugs);
+  return allDrugs.map((drug) => JSON.parse(drug.json));
 };
 
 export default fetchJson;
