@@ -175,17 +175,19 @@ const renderAllDrugs = (allDrugs) => {
   };
 };
 
-fetchJson("/resources/guidedSubstanceData.json").then((data) => {
-  const push = AdamRouter.createRoutes({
-    GuidedSubstance: renderHomePage(data),
-    Detail: renderDetailPage(data),
-    AllDrugs: renderAllDrugs(data),
-    Help: renderHelpPage(data),
-    Categories: renderCategories(data),
-  });
+fetchJson("/GuidedSubstance/resources/guidedSubstanceData.json").then(
+  (data) => {
+    const push = AdamRouter.createRoutes({
+      GuidedSubstance: renderHomePage(data),
+      Detail: renderDetailPage(data),
+      AllDrugs: renderAllDrugs(data),
+      Help: renderHelpPage(data),
+      Categories: renderCategories(data),
+    });
 
-  push("GuidedSubstance");
-});
+    push("GuidedSubstance");
+  }
+);
 
 const chatButton = document.querySelector("#chat-bubble");
 
